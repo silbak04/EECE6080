@@ -15,10 +15,8 @@ end entity top;
 
 architecture rtl of top is
 
-    -- carry in/out
+    -- carry in
     signal c_i : std_logic_vector(BIT_WIDTH   downto 0) := (others => '0');
-    signal c_o : std_logic_vector(BIT_WIDTH-1 downto 0) := (others => '0');
-
     signal min : std_logic_vector(BIT_WIDTH-1 downto 0) := (others => '0');
 
 begin
@@ -30,7 +28,7 @@ begin
             b   => b(n),
             q_i => c_i(n),
             q_o => c_i(n+1),
-            sel => c_o(BIT_WIDTH-1),
+            sel => c_i(BIT_WIDTH),
             min => c(n)
         );
     end generate b_width;
