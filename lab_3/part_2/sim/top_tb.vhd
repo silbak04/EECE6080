@@ -62,7 +62,7 @@ begin
                 a <= slv(unsigned(a) + i);
                 b <= slv(unsigned(b) + j);
 
-                wait for 10 ns;
+                wait for 8 ns;
             end loop;
         end loop;
         wait;
