@@ -15,24 +15,12 @@ entity bit_slice is
     );
 end bit_slice;
 
-architecture rtl of bit_slice is
-
-    signal carry_out : std_logic := '0';
-
-begin
+architecture rtl of bit_slice is begin
 
     -- comparator
-    process(a, b, q_i, carry_out) begin
-        if (a = '0' and b = '1') then
-            carry_out <= '1';
-        elsif (a = '1' and b = '0') then
-            carry_out <= '0';
-        else
-            carry_out <= q_i;
-        end if;
-    end process;
-
-    q_o <= carry_out;
+    q_o <= '1' when (a = '0' and b = '1') else
+           '0' when (a = '1' and b = '0') else
+           q_i;
 
     min <= a when (sel = '1') else
            b when (sel = '0');
