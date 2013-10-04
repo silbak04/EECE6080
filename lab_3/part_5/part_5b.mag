@@ -1,0 +1,65 @@
+magic
+tech scmos
+timestamp 1380887095
+<< polysilicon >>
+rect 196 1289 200 1291
+rect 196 1226 200 1228
+rect 196 1126 200 1128
+rect 196 1063 200 1065
+rect 196 963 200 965
+rect 196 900 200 902
+rect 196 800 200 802
+rect 196 737 200 739
+rect 196 637 200 639
+rect 196 574 200 576
+rect 196 474 200 476
+rect 196 411 200 413
+rect 196 311 200 313
+rect 196 248 200 250
+rect 196 148 200 150
+rect 196 85 200 87
+<< metal1 >>
+rect 101 1308 120 1312
+rect 101 1304 105 1308
+rect 116 1304 120 1308
+rect 151 1229 155 1233
+rect 151 1066 155 1070
+rect 151 903 155 907
+rect 151 740 155 744
+rect 151 577 155 581
+rect 151 414 155 418
+rect 151 251 155 255
+rect 151 88 155 92
+rect 101 -4 105 0
+use part_5  part_5_0
+array 0 0 196 0 7 163
+timestamp 1380881990
+transform 1 0 72 0 1 128
+box -72 -128 124 35
+<< labels >>
+rlabel metal1 101 -4 105 0 0 GND
+rlabel metal1 151 88 155 92 0 F0
+rlabel metal1 151 251 155 255 0 F1
+rlabel metal1 151 414 155 418 0 F2
+rlabel metal1 151 577 155 581 0 F3
+rlabel metal1 151 740 155 744 0 F4
+rlabel metal1 151 903 155 907 0 F5
+rlabel metal1 151 1066 155 1070 0 F6
+rlabel metal1 151 1229 155 1233 0 F7
+rlabel polysilicon 196 1289 200 1291 0 A7
+rlabel polysilicon 196 1226 200 1228 0 B7
+rlabel polysilicon 196 1126 200 1128 0 A6
+rlabel polysilicon 196 1063 200 1065 0 B6
+rlabel polysilicon 196 900 200 902 0 B5
+rlabel polysilicon 196 963 200 965 0 A5
+rlabel polysilicon 196 800 200 802 0 A4
+rlabel polysilicon 196 737 200 739 0 B4
+rlabel polysilicon 196 637 200 639 0 A3
+rlabel polysilicon 196 574 200 576 0 B3
+rlabel polysilicon 196 474 200 476 0 A2
+rlabel polysilicon 196 411 200 413 0 B2
+rlabel polysilicon 196 311 200 313 0 A1
+rlabel polysilicon 196 248 200 250 0 B1
+rlabel polysilicon 196 148 200 150 0 A0
+rlabel polysilicon 196 85 200 87 0 B0
+<< end >>

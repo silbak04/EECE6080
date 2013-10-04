@@ -1,0 +1,79 @@
+* SPICE3 file created from part_3.ext - technology: scmos
+
+.option scale=0.3u
+
+M1000 GND A a_n72_n114# Gnd nfet w=4 l=2
++ ad=232 pd=188 as=20 ps=18 
+M1001 VDD A a_n72_n114# Vdd pfet w=4 l=2
++ ad=448 pd=360 as=20 ps=18 
+M1002 GND A a_86_4# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1003 VDD A a_84_n16# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1004 GND a_n72_n114# a_n44_n15# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=56 ps=44 
+M1005 VDD a_n72_n114# A_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=56 ps=44 
+M1006 a_86_4# SEL a_84_n16# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=24 ps=20 
+M1007 VDD SEL a_84_n16# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1008 a_n44_n15# B A_OUT Gnd nfet w=4 l=2
++ ad=0 pd=0 as=24 ps=20 
+M1009 VDD B A_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1010 GND a_84_n16# a_86_n32# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1011 VDD a_84_n16# MUX_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1012 a_86_n32# a_58_n35# MUX_OUT Gnd nfet w=4 l=2
++ ad=0 pd=0 as=24 ps=20 
+M1013 VDD a_58_n35# MUX_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1014 GND B a_n44_n59# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1015 VDD B B_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1016 VDD A_OUT C_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=80 ps=64 
+M1017 GND A_OUT a_29_n72# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=56 ps=44 
+M1018 a_n44_n59# C_IN B_OUT Gnd nfet w=4 l=2
++ ad=0 pd=0 as=24 ps=20 
+M1019 VDD C_IN B_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1020 GND B a_86_n72# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=56 ps=44 
+M1021 VDD B a_58_n35# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1022 VDD B_OUT C_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1023 a_29_n72# B_OUT a_29_n92# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=56 ps=44 
+M1024 a_86_n72# a_84_n74# a_58_n35# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=24 ps=20 
+M1025 VDD a_84_n74# a_58_n35# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1026 GND C_IN a_n44_n111# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1027 VDD C_IN CIN_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=56 ps=44 
+M1028 VDD CIN_OUT C_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1029 a_29_n92# CIN_OUT C_OUT Gnd nfet w=4 l=2
++ ad=0 pd=0 as=24 ps=20 
+M1030 GND SEL a_84_n74# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1031 VDD SEL a_84_n74# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1032 a_n44_n111# a_n72_n114# CIN_OUT Gnd nfet w=4 l=2
++ ad=0 pd=0 as=32 ps=24 
+M1033 VDD a_n72_n114# CIN_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+C0 a_84_n74# gnd! 3.3fF
+C1 a_58_n35# gnd! 7.0fF
+C2 MUX_OUT gnd! 2.9fF
+C3 SEL gnd! 12.3fF
+C4 a_84_n16# gnd! 2.9fF
+C5 a_n72_n114# gnd! 10.7fF
+C6 VDD gnd! 31.0fF

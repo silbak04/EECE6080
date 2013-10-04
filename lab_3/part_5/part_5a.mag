@@ -1,0 +1,35 @@
+magic
+tech scmos
+timestamp 1380882798
+<< polysilicon >>
+rect 163 455 167 457
+rect 163 392 167 394
+rect 163 292 167 294
+rect 163 229 167 231
+rect 163 129 167 131
+rect 163 66 167 68
+<< metal1 >>
+rect 68 474 87 478
+rect 68 470 72 474
+rect 83 470 87 474
+rect 118 395 122 399
+rect 118 232 122 236
+rect 118 69 122 73
+rect 68 -23 72 -19
+use part_5  part_5_0
+array 0 0 196 0 2 163
+timestamp 1380881990
+transform 1 0 39 0 1 109
+box -72 -128 124 35
+<< labels >>
+rlabel polysilicon 163 229 167 231 0 B1
+rlabel polysilicon 163 292 167 294 0 A1
+rlabel polysilicon 163 392 167 394 0 B2
+rlabel polysilicon 163 455 167 457 0 A2
+rlabel metal1 68 -23 72 -19 0 GND
+rlabel polysilicon 163 66 167 68 0 B0
+rlabel polysilicon 163 129 167 131 0 A0
+rlabel metal1 118 69 122 73 0 F0
+rlabel metal1 118 232 122 236 0 F1
+rlabel metal1 118 395 122 399 0 F2
+<< end >>

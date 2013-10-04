@@ -1,0 +1,233 @@
+* SPICE3 file created from part_5_cells.ext - technology: scmos
+
+.option scale=0.3u
+
+M1000 GND A0 part_5_0[0]/a_n72_n114# Gnd nfet w=4 l=2
++ ad=696 pd=564 as=20 ps=18 
+M1001 VDD A0 part_5_0[0]/a_n72_n114# Vdd pfet w=4 l=2
++ ad=1344 pd=1080 as=20 ps=18 
+M1002 GND A0 part_5_0[0]/a_86_4# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1003 VDD A0 part_5_0[0]/a_84_n16# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1004 GND part_5_0[0]/a_n72_n114# part_5_0[0]/a_n44_n15# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=56 ps=44 
+M1005 VDD part_5_0[0]/a_n72_n114# part_5_0[0]/A_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=56 ps=44 
+M1006 part_5_0[0]/a_86_4# part_5_0[0]/SEL part_5_0[0]/a_84_n16# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=24 ps=20 
+M1007 VDD part_5_0[0]/SEL part_5_0[0]/a_84_n16# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1008 part_5_0[0]/a_n44_n15# B0 part_5_0[0]/A_OUT Gnd nfet w=4 l=2
++ ad=0 pd=0 as=24 ps=20 
+M1009 VDD B0 part_5_0[0]/A_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1010 GND part_5_0[0]/a_84_n16# part_5_0[0]/a_86_n32# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1011 VDD part_5_0[0]/a_84_n16# F0 Vdd pfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1012 part_5_0[0]/a_86_n32# part_5_0[0]/a_58_n35# F0 Gnd nfet w=4 l=2
++ ad=0 pd=0 as=24 ps=20 
+M1013 VDD part_5_0[0]/a_58_n35# F0 Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1014 GND B0 part_5_0[0]/a_n44_n59# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1015 VDD B0 part_5_0[0]/B_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1016 VDD part_5_0[0]/A_OUT part_5_0[1]/C_IN Vdd pfet w=4 l=2
++ ad=0 pd=0 as=80 ps=64 
+M1017 GND part_5_0[0]/A_OUT part_5_0[0]/a_29_n72# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=56 ps=44 
+M1018 part_5_0[0]/a_n44_n59# GND part_5_0[0]/B_OUT Gnd nfet w=4 l=2
++ ad=0 pd=0 as=24 ps=20 
+M1019 VDD GND part_5_0[0]/B_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1020 GND B0 part_5_0[0]/a_86_n72# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=56 ps=44 
+M1021 VDD B0 part_5_0[0]/a_58_n35# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1022 VDD part_5_0[0]/B_OUT part_5_0[1]/C_IN Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1023 part_5_0[0]/a_29_n72# part_5_0[0]/B_OUT part_5_0[0]/a_29_n92# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=56 ps=44 
+M1024 part_5_0[0]/a_86_n72# part_5_0[0]/a_84_n74# part_5_0[0]/a_58_n35# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=24 ps=20 
+M1025 VDD part_5_0[0]/a_84_n74# part_5_0[0]/a_58_n35# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1026 GND GND part_5_0[0]/a_n44_n111# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1027 VDD GND part_5_0[0]/CIN_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=56 ps=44 
+M1028 VDD part_5_0[0]/CIN_OUT part_5_0[1]/C_IN Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1029 part_5_0[0]/a_29_n92# part_5_0[0]/CIN_OUT part_5_0[1]/C_IN Gnd nfet w=4 l=2
++ ad=0 pd=0 as=24 ps=20 
+M1030 GND part_5_0[0]/SEL part_5_0[0]/a_84_n74# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1031 VDD part_5_0[0]/SEL part_5_0[0]/a_84_n74# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1032 part_5_0[0]/a_n44_n111# part_5_0[0]/a_n72_n114# part_5_0[0]/CIN_OUT Gnd nfet w=4 l=2
++ ad=0 pd=0 as=32 ps=24 
+M1033 VDD part_5_0[0]/a_n72_n114# part_5_0[0]/CIN_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1034 GND A1 part_5_0[1]/a_n72_n114# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1035 VDD A1 part_5_0[1]/a_n72_n114# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1036 GND A1 part_5_0[1]/a_86_4# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1037 VDD A1 part_5_0[1]/a_84_n16# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1038 GND part_5_0[1]/a_n72_n114# part_5_0[1]/a_n44_n15# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=56 ps=44 
+M1039 VDD part_5_0[1]/a_n72_n114# part_5_0[1]/A_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=56 ps=44 
+M1040 part_5_0[1]/a_86_4# part_5_0[0]/SEL part_5_0[1]/a_84_n16# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=24 ps=20 
+M1041 VDD part_5_0[0]/SEL part_5_0[1]/a_84_n16# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1042 part_5_0[1]/a_n44_n15# B1 part_5_0[1]/A_OUT Gnd nfet w=4 l=2
++ ad=0 pd=0 as=24 ps=20 
+M1043 VDD B1 part_5_0[1]/A_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1044 GND part_5_0[1]/a_84_n16# part_5_0[1]/a_86_n32# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1045 VDD part_5_0[1]/a_84_n16# F1 Vdd pfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1046 part_5_0[1]/a_86_n32# part_5_0[1]/a_58_n35# F1 Gnd nfet w=4 l=2
++ ad=0 pd=0 as=24 ps=20 
+M1047 VDD part_5_0[1]/a_58_n35# F1 Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1048 GND B1 part_5_0[1]/a_n44_n59# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1049 VDD B1 part_5_0[1]/B_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1050 VDD part_5_0[1]/A_OUT part_5_0[2]/C_IN Vdd pfet w=4 l=2
++ ad=0 pd=0 as=80 ps=64 
+M1051 GND part_5_0[1]/A_OUT part_5_0[1]/a_29_n72# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=56 ps=44 
+M1052 part_5_0[1]/a_n44_n59# part_5_0[1]/C_IN part_5_0[1]/B_OUT Gnd nfet w=4 l=2
++ ad=0 pd=0 as=24 ps=20 
+M1053 VDD part_5_0[1]/C_IN part_5_0[1]/B_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1054 GND B1 part_5_0[1]/a_86_n72# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=56 ps=44 
+M1055 VDD B1 part_5_0[1]/a_58_n35# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1056 VDD part_5_0[1]/B_OUT part_5_0[2]/C_IN Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1057 part_5_0[1]/a_29_n72# part_5_0[1]/B_OUT part_5_0[1]/a_29_n92# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=56 ps=44 
+M1058 part_5_0[1]/a_86_n72# part_5_0[1]/a_84_n74# part_5_0[1]/a_58_n35# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=24 ps=20 
+M1059 VDD part_5_0[1]/a_84_n74# part_5_0[1]/a_58_n35# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1060 GND part_5_0[1]/C_IN part_5_0[1]/a_n44_n111# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1061 VDD part_5_0[1]/C_IN part_5_0[1]/CIN_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=56 ps=44 
+M1062 VDD part_5_0[1]/CIN_OUT part_5_0[2]/C_IN Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1063 part_5_0[1]/a_29_n92# part_5_0[1]/CIN_OUT part_5_0[2]/C_IN Gnd nfet w=4 l=2
++ ad=0 pd=0 as=24 ps=20 
+M1064 GND part_5_0[0]/SEL part_5_0[1]/a_84_n74# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1065 VDD part_5_0[0]/SEL part_5_0[1]/a_84_n74# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1066 part_5_0[1]/a_n44_n111# part_5_0[1]/a_n72_n114# part_5_0[1]/CIN_OUT Gnd nfet w=4 l=2
++ ad=0 pd=0 as=32 ps=24 
+M1067 VDD part_5_0[1]/a_n72_n114# part_5_0[1]/CIN_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1068 GND A2 part_5_0[2]/a_n72_n114# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1069 VDD A2 part_5_0[2]/a_n72_n114# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1070 GND A2 part_5_0[2]/a_86_4# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1071 VDD A2 part_5_0[2]/a_84_n16# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1072 GND part_5_0[2]/a_n72_n114# part_5_0[2]/a_n44_n15# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=56 ps=44 
+M1073 VDD part_5_0[2]/a_n72_n114# part_5_0[2]/A_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=56 ps=44 
+M1074 part_5_0[2]/a_86_4# part_5_0[0]/SEL part_5_0[2]/a_84_n16# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=24 ps=20 
+M1075 VDD part_5_0[0]/SEL part_5_0[2]/a_84_n16# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1076 part_5_0[2]/a_n44_n15# B2 part_5_0[2]/A_OUT Gnd nfet w=4 l=2
++ ad=0 pd=0 as=24 ps=20 
+M1077 VDD B2 part_5_0[2]/A_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1078 GND part_5_0[2]/a_84_n16# part_5_0[2]/a_86_n32# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1079 VDD part_5_0[2]/a_84_n16# F2 Vdd pfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1080 part_5_0[2]/a_86_n32# part_5_0[2]/a_58_n35# F2 Gnd nfet w=4 l=2
++ ad=0 pd=0 as=24 ps=20 
+M1081 VDD part_5_0[2]/a_58_n35# F2 Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1082 GND B2 part_5_0[2]/a_n44_n59# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1083 VDD B2 part_5_0[2]/B_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1084 VDD part_5_0[2]/A_OUT part_5_0[0]/SEL Vdd pfet w=4 l=2
++ ad=0 pd=0 as=80 ps=64 
+M1085 GND part_5_0[2]/A_OUT part_5_0[2]/a_29_n72# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=56 ps=44 
+M1086 part_5_0[2]/a_n44_n59# part_5_0[2]/C_IN part_5_0[2]/B_OUT Gnd nfet w=4 l=2
++ ad=0 pd=0 as=24 ps=20 
+M1087 VDD part_5_0[2]/C_IN part_5_0[2]/B_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1088 GND B2 part_5_0[2]/a_86_n72# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=56 ps=44 
+M1089 VDD B2 part_5_0[2]/a_58_n35# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1090 VDD part_5_0[2]/B_OUT part_5_0[0]/SEL Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1091 part_5_0[2]/a_29_n72# part_5_0[2]/B_OUT part_5_0[2]/a_29_n92# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=56 ps=44 
+M1092 part_5_0[2]/a_86_n72# part_5_0[2]/a_84_n74# part_5_0[2]/a_58_n35# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=24 ps=20 
+M1093 VDD part_5_0[2]/a_84_n74# part_5_0[2]/a_58_n35# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1094 GND part_5_0[2]/C_IN part_5_0[2]/a_n44_n111# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=48 ps=40 
+M1095 VDD part_5_0[2]/C_IN part_5_0[2]/CIN_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=56 ps=44 
+M1096 VDD part_5_0[2]/CIN_OUT part_5_0[0]/SEL Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+M1097 part_5_0[2]/a_29_n92# part_5_0[2]/CIN_OUT part_5_0[0]/SEL Gnd nfet w=4 l=2
++ ad=0 pd=0 as=24 ps=20 
+M1098 GND part_5_0[0]/SEL part_5_0[2]/a_84_n74# Gnd nfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1099 VDD part_5_0[0]/SEL part_5_0[2]/a_84_n74# Vdd pfet w=4 l=2
++ ad=0 pd=0 as=20 ps=18 
+M1100 part_5_0[2]/a_n44_n111# part_5_0[2]/a_n72_n114# part_5_0[2]/CIN_OUT Gnd nfet w=4 l=2
++ ad=0 pd=0 as=32 ps=24 
+M1101 VDD part_5_0[2]/a_n72_n114# part_5_0[2]/CIN_OUT Vdd pfet w=4 l=2
++ ad=0 pd=0 as=0 ps=0 
+C0 part_5_0[2]/CIN_OUT gnd! 5.6fF
+C1 part_5_0[2]/a_84_n74# gnd! 3.3fF
+C2 part_5_0[2]/C_IN gnd! 19.9fF
+C3 part_5_0[2]/B_OUT gnd! 4.2fF
+C4 part_5_0[2]/a_58_n35# gnd! 7.4fF
+C5 part_5_0[0]/SEL gnd! 46.8fF
+C6 part_5_0[2]/A_OUT gnd! 6.2fF
+C7 part_5_0[2]/a_84_n16# gnd! 2.9fF
+C8 part_5_0[2]/a_n72_n114# gnd! 10.2fF
+C9 part_5_0[1]/CIN_OUT gnd! 5.6fF
+C10 part_5_0[1]/a_84_n74# gnd! 3.3fF
+C11 part_5_0[1]/C_IN gnd! 19.9fF
+C12 part_5_0[1]/B_OUT gnd! 4.2fF
+C13 part_5_0[1]/a_58_n35# gnd! 7.4fF
+C14 part_5_0[1]/A_OUT gnd! 6.2fF
+C15 part_5_0[1]/a_84_n16# gnd! 2.9fF
+C16 part_5_0[1]/a_n72_n114# gnd! 10.2fF
+C17 part_5_0[0]/CIN_OUT gnd! 5.6fF
+C18 part_5_0[0]/a_84_n74# gnd! 3.3fF
+C19 part_5_0[0]/B_OUT gnd! 4.4fF
+C20 part_5_0[0]/a_58_n35# gnd! 7.4fF
+C21 part_5_0[0]/A_OUT gnd! 6.2fF
+C22 part_5_0[0]/a_84_n16# gnd! 2.9fF
+C23 part_5_0[0]/a_n72_n114# gnd! 10.4fF
+C24 VDD gnd! 90.1fF
