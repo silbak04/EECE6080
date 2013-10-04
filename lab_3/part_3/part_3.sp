@@ -11,8 +11,8 @@ v_c C_IN gnd PWL(5n 0v)
 .options post
 .tran 0.01n 30n
 
-.meas tran t_rise trig v(f_o) val=0.5V rise=1 targ v(f_o) val=4.5V rise=1
-.meas tran t_fall trig v(f_o) val=4.5V fall=1 targ v(f_o) val=0.5V fall=1
+.meas tran t_rise trig v(F) val=0.5V rise=1 targ v(F) val=4.5V rise=1
+.meas tran t_fall trig v(F) val=4.5V fall=1 targ v(F) val=0.5V fall=1
 .meas t_d param='(t_rise+t_fall)/2'
 
 .end
