@@ -11,6 +11,6 @@ end not_gate;
 
 architecture rtl of not_gate is begin
 
-    f <= not(a); -- after 5 ns;
+    f <= not(a) after 191.28 ps;
 
 end rtl;

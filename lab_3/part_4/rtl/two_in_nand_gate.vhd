@@ -12,6 +12,6 @@ end two_in_nand_gate;
 
 architecture rtl of two_in_nand_gate is begin
 
-    f <= not(a and b); -- after 5 ns;
+    f <= not(a and b) after 670 ps;
 
 end rtl;
