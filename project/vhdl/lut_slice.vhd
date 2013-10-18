@@ -14,7 +14,7 @@ entity lut_slice is
         q   : out std_logic_vector(bit_w-1 downto 0);
         fo  : out std_logic
     );
-end entity lut_slice;
+end lut_slice;
 
 architecture rtl of lut_slice is
 
@@ -25,6 +25,8 @@ architecture rtl of lut_slice is
 
 begin
 
+    -- load data into register
+    -- then shift to the right 1
     process(clk, di) begin
         if rising_edge(clk) then
             qo(bit_w-1) <= di;
@@ -34,12 +36,18 @@ begin
 
     q <= qo;
 
+    -- select first two outputs of LUT
+    -- on sel line A
     f1 <= qo(3) when (a = '0') else
           qo(2) when (a = '1');
 
+    -- select last two outputs of LUT
+    -- on sel line A
     f2 <= qo(1) when (a = '0') else
           qo(0) when (a = '1');
 
+    -- select last two outputs from
+    -- each mux on sel line B
     fo <= f1    when (b = '0') else
           f2    when (b = '1');
 
