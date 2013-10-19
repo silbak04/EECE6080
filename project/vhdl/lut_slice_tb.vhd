@@ -13,7 +13,7 @@ architecture behavior of lut_slice_tb is
     signal di   : std_logic;
     signal a    : std_logic;
     signal b    : std_logic;
-    signal q    : std_logic_vector(bit_w-1 downto 0);
+    signal q    : std_logic;
     signal fo   : std_logic;
 
     component lut_slice
@@ -25,7 +25,7 @@ architecture behavior of lut_slice_tb is
             di  : in std_logic;
             a   : in std_logic;
             b   : in std_logic;
-            q   : out std_logic_vector(bit_w-1 downto 0);
+            q   : out std_logic;
             fo  : out std_logic
         );
     end component;
@@ -66,7 +66,7 @@ begin
         wait for 10 ns;
     end process;
 
-    lut : lut_slice
+    dut : lut_slice
     generic map(
         bit_w => bit_w
     )

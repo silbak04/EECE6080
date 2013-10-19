@@ -11,7 +11,7 @@ entity lut_slice is
         di  : in std_logic;
         a   : in std_logic;
         b   : in std_logic;
-        q   : out std_logic_vector(bit_w-1 downto 0);
+        q   : out std_logic;
         fo  : out std_logic
     );
 end lut_slice;
@@ -34,7 +34,9 @@ begin
         end if;
     end process;
 
-    q <= qo;
+    -- we only need the last bit in q
+    -- shifting in from MSB to LSB
+    q <= qo(0);
 
     -- select first two outputs of LUT
     -- on sel line A
