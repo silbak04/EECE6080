@@ -3,54 +3,87 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity lut_slice is
-    generic(
-        bit_w : integer := 4
-    );
     port(
-        clk : in std_logic;
-        di  : in std_logic;
-        a   : in std_logic;
-        b   : in std_logic;
-        q   : out std_logic;
-        fo  : out std_logic
+        clk_i   : in std_logic;
+        clk_o   : out std_logic;
+        d       : in std_logic;
+        a       : in std_logic;
+        b       : in std_logic;
+        q       : out std_logic;
+        f       : out std_logic
     );
 end lut_slice;
 
 architecture rtl of lut_slice is
 
-    signal qo : std_logic_vector(bit_w-1 downto 0) := (others => '0');
-
-    signal f1 : std_logic := '0';
-    signal f2 : std_logic := '0';
+    -- flip flop and mux outputs
+    signal ff_o  : std_logic_vector(3 downto 0) := (others => '0');
+    signal mux_o : std_logic_vector(1 downto 0) := (others => '0');
 
 begin
 
-    -- load data into register
-    -- then shift to the right 1
-    process(clk, di) begin
-        if rising_edge(clk) then
-            qo(bit_w-1) <= di;
-            qo(bit_w-2 downto 0) <= qo(bit_w-1 downto 1);
-        end if;
-    end process;
-
-    -- we only need the last bit in q
     -- shifting in from MSB to LSB
-    q <= qo(0);
+    ff1 : entity work.dffposx1
+    port map(
+        clk => clk_i,
+        d   => d,
+        q   => ff_o(3)
+    );
+
+    ff2 : entity work.dffposx1
+    port map(
+        clk => clk_i,
+        d   => ff_o(3),
+        q   => ff_o(2)
+    );
+
+    ff3 : entity work.dffposx1
+    port map(
+        clk => clk_i,
+        d   => ff_o(2),
+        q   => ff_o(1)
+    );
+
+    ff4 : entity work.dffposx1
+    port map(
+        clk => clk_i,
+        d   => ff_o(1),
+        q   => ff_o(0)
+    );
+
+    -- lut shift out is output from prev ff
+    q <= ff_o(0);
 
     -- select first two outputs of LUT
     -- on sel line A
-    f1 <= qo(3) when (a = '0') else
-          qo(2) when (a = '1');
+    mux1 : entity work.mux2x1
+    port map(
+        a => ff_o(3),
+        b => ff_o(2),
+        s => a,
+        x => mux_o(0)
+    );
 
     -- select last two outputs of LUT
     -- on sel line A
-    f2 <= qo(1) when (a = '0') else
-          qo(0) when (a = '1');
+    mux2 : entity work.mux2x1
+    port map(
+        a => ff_o(1),
+        b => ff_o(0),
+        s => a,
+        x => mux_o(1)
+    );
 
     -- select last two outputs from
     -- each mux on sel line B
-    fo <= f1    when (b = '0') else
-          f2    when (b = '1');
+    mux3 : entity work.mux2x1
+    port map(
+        a => mux_o(0),
+        b => mux_o(1),
+        s => b,
+        x => f
+    );
+
+    clk_o <= clk_i;
 
 end rtl;
