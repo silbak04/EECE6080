@@ -75,12 +75,12 @@ begin
                  b     => r_c(level, i*2+1),
                  f     => r_c(level, i)
              );
-
         end generate;
-        -- output the value of our function
-        f_o <= r_c(n-1, (2**level)-1);
-        q_o <= l_c(n-1, (2**level)-1);
     end generate;
+
+    -- output the value of our function
+    f_o <= r_c(n-1, (2**n)-1);
+    q_o <= l_c(n-1, (2**n)-1);
 
     -- connect each row of LUTs together
     -- first slice in row i connects to last slice in row i+1
