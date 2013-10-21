@@ -3,29 +3,19 @@ use ieee.std_logic_1164.all;
 
 entity top is
     generic(
-       n      : integer := 3  -- number of levels in tree
+       n      : integer := 3    -- number of levels in tree
    );
     port(
-        s_clk : in std_logic; -- shift register clock
-        l_clk : in std_logic; -- lut shift register clock
-        s_in  : in std_logic; -- shift register input
-        l_in  : in std_logic  -- lut shift register input
-);
+        s_clk : in std_logic;   -- shift register clock
+        l_clk : in std_logic;   -- lut shift register clock
+        s_in  : in std_logic;   -- shift register input (P)
+        l_in  : in std_logic;   -- lut shift register input
+        f_o   : out std_logic;  -- final output of computation
+        q_o   : out std_logic   -- lut shift register output
+    );
 end top;
 
 architecture rtl of top is
-
-    component lut_slice is
-        port(
-            clk_i   : in std_logic;
-            d       : in std_logic;
-            a       : in std_logic;
-            b       : in std_logic;
-            clk_o   : out std_logic;
-            q       : out std_logic;
-            f       : out std_logic
-        );
-    end component;
 
     -- tree diagram for n = 3
     -- row 0 : A
@@ -51,6 +41,20 @@ architecture rtl of top is
     -- input shift register carries
     signal s_c   : std_logic_vector(2**n downto 0);
 
+    signal result : std_logic := '0';
+
+    component lut_slice is
+        port(
+            clk_i   : in std_logic;
+            d       : in std_logic;
+            a       : in std_logic;
+            b       : in std_logic;
+            clk_o   : out std_logic;
+            q       : out std_logic;
+            f       : out std_logic
+        );
+    end component;
+
 begin
 
     -- generate the input shift register
@@ -71,7 +75,11 @@ begin
                  b     => r_c(level, i*2+1),
                  f     => r_c(level, i)
              );
+
         end generate;
+        -- output the value of our function
+        f_o <= r_c(n-1, (2**level)-1);
+        q_o <= l_c(n-1, (2**level)-1);
     end generate;
 
     -- connect each row of LUTs together
