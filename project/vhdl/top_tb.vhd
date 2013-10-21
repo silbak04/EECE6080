@@ -95,7 +95,7 @@ begin
             end loop;
 
             -- clock in the "program" (lut functions)
-            for i in 0 to n-1 loop
+            for i in 0 to (((2**n)-1)*4)-1 loop
                 l_in <= lut_vector(i);
                 wait for 10 ns;
                 clk_lut_in;
