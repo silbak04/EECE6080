@@ -13,12 +13,13 @@ architecture behavior of top_tb is
 
     constant n : integer := 3;
 
-    signal s_clk : std_logic := '0';
+    signal p_clk : std_logic := '0';
     signal l_clk : std_logic := '0';
     signal p     : std_logic := '0';
     signal l_in  : std_logic := '0';
     signal f_o   : std_logic;
     signal q_o   : std_logic;
+    signal t_en  : std_logic := '0';
 
     signal p_in_vector : std_logic_vector((2**n)-1         downto 0);
     signal lut_vector  : std_logic_vector((((2**n)-1)*4)-1 downto 0);
@@ -30,10 +31,11 @@ architecture behavior of top_tb is
            n      : integer := 3    -- number of levels in tree
        );
         port(
-            s_clk : in std_logic;   -- shift register clock
+            p_clk : in std_logic;   -- p shift register clock
             l_clk : in std_logic;   -- lut shift register clock
-            s_in  : in std_logic;   -- shift register input (P)
+            p_in  : in std_logic;   -- shift register input (P)
             l_in  : in std_logic;   -- lut shift register input
+            t_en  : in std_logic;   -- test enalbe input
             f_o   : out std_logic;  -- final output of computation
             q_o   : out std_logic   -- lut shift register output
         );
@@ -46,10 +48,11 @@ begin
         n     => n
     )
     port map(
-        s_clk => s_clk,
+        p_clk => p_clk,
         l_clk => l_clk,
-        s_in  => p,
+        p_in  => p,
         l_in  => l_in,
+        t_en  => t_en,
         f_o   => f_o,
         q_o   => q_o
     );
@@ -57,9 +60,9 @@ begin
     process
 
         procedure clk_p_in is begin
-            s_clk <= '1';
+            p_clk <= '1';
             wait for 10 ns;
-            s_clk <= '0';
+            p_clk <= '0';
             wait for 10 ns;
         end procedure clk_p_in;
 
