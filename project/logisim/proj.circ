@@ -1114,7 +1114,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp loc="(550,360)" name="shift_slice"/>
     <comp lib="0" loc="(70,260)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="S_IN"/>
+      <a name="label" val="L_IN"/>
       <a name="labelfont" val="Arial Black plain 10"/>
     </comp>
     <comp loc="(190,280)" name="lut_slice"/>
@@ -1138,7 +1138,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="0" loc="(70,220)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="S_CI"/>
+      <a name="label" val="L_CI"/>
       <a name="labelfont" val="Arial Black plain 10"/>
     </comp>
     <comp loc="(370,120)" name="lut_slice"/>
