@@ -62,45 +62,39 @@ begin
     -- generate the tree
     level_gen : for level in 0 to n-1 generate
         lut_gen : for i in 0 to (2**level)-1 generate
-            lut_i : lut_slice
+            lut_i : entity work.lut_slice
             port map(
                  clk_i => clk_c(level, i),
                  clk_o => clk_c(level, i+1),
                  d     => l_c(level, i),
                  q     => l_c(level, i+1),
-                 a     => r_c(level, i*2),
-                 b     => r_c(level, i*2+1),
+                 a     => r_c(level+1, i*2),
+                 b     => r_c(level+1, i*2+1),
                  f     => r_c(level, i)
              );
         end generate;
     end generate;
 
     -- output the value of our function
-    --f_o <= r_c(n-1, (2**n)-1);
-    --f_o <= r_c(0, (2**n)-1);
-    --q_o <= l_c(0, (2**n)-1);
-    --f_o <= r_c(n-1, 0);
-    q_o <= l_c(0, 0);
+    q_o <= l_c(0, 1);
     f_o <= r_c(0, 0);
 
     -- connect each row of LUTs together
     -- first slice in row i connects to
     -- last slice in row i+1
     lut_connect : for level in 0 to n-2 generate
-        l_c(level, 0) <= l_c(level+1, (2**level));
+        l_c(level, 0)   <= l_c(level+1, (2**level));
+        clk_c(level, 0) <= clk_c(level+1, (2**level));
     end generate;
 
     -- connect input shift register to bottom row of slices
     shift_connect : for i in 0 to (2**n)-1 generate
-        r_c(n-1, i) <= s_c(i+1);
+        r_c(n, i) <= s_c(i+1);
     end generate;
 
-    -- connect input to
+    -- connect input and clock to
     -- shift register
-    s_c(0) <= s_in;
-
-    -- connect input clk to
-    -- shift register
+    s_c(0)   <= s_in;
     p_clk(0) <= s_clk;
 
     -- connect input and clock
