@@ -10,8 +10,8 @@ entity lut is
         l_clk : in std_logic;   -- lut shift register clock
         s_in  : in std_logic;   -- shift register input (P)
         l_in  : in std_logic;   -- lut shift register input
-        t_en  : in std_logic;   -- test enalbe input
-        t_po  : out std_logic;  -- test p_out
+        t_po  : out std_logic;  -- p_out for test mode
+        t_co  : out std_logic;  -- p_clk for test mode
         f_o   : out std_logic;  -- final output of computation
         q_o   : out std_logic   -- final lut shift register output
     );
@@ -108,8 +108,9 @@ begin
     l_c(n-1,   0) <= l_in;
     clk_c(n-1, 0) <= l_clk;
 
-    -- use last slice of P shift
-    -- register for test enabled mode
+    -- use last slice of P shift register
+    -- feed it into LUT input for test mode
     t_po <= s_c(2**n);
+    t_co <= p_clk(2**n);
 
 end rtl;
