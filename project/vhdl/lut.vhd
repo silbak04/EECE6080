@@ -63,10 +63,10 @@ architecture rtl of lut is
     signal l_c   : carry_array;
 
     -- input shift register carries
-    signal s_c   : std_logic_vector(2**n downto 0);
+    signal s_c   : std_logic_vector(2**n downto 0) := (others => '0');
 
     --  input shift regstier clock carries
-    signal p_clk : std_logic_vector(2**n downto 0);
+    signal p_clk : std_logic_vector(2**n downto 0) := (others => '0');
 
 begin
 
