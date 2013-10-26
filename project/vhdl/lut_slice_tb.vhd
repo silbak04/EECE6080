@@ -7,11 +7,11 @@ end lut_slice_tb;
 
 architecture behavior of lut_slice_tb is
 
-    signal clk      : std_logic;
+    signal clk      : std_logic := '0';
     signal clk_o    : std_logic;
-    signal di       : std_logic;
-    signal a        : std_logic;
-    signal b        : std_logic;
+    signal di       : std_logic := '0';
+    signal a        : std_logic := '0';
+    signal b        : std_logic := '0';
     signal q        : std_logic;
     signal f        : std_logic;
 
@@ -29,40 +29,6 @@ architecture behavior of lut_slice_tb is
 
 begin
 
-    -- lut for AND gate
-    process begin
-        clk <= '0';
-        di  <= '0';
-        a   <= '1';
-        b   <= '1';
-        wait for 10 ns;
-
-        clk <= '1';
-        di  <= '1';
-        wait for 10 ns;
-
-        clk <= '0';
-        wait for 10 ns;
-
-        clk <= '1';
-        di  <= '0';
-        wait for 10 ns;
-
-        clk <= '0';
-        wait for 10 ns;
-
-        clk <= '1';
-        di  <= '0';
-        wait for 10 ns;
-
-        clk <= '0';
-        wait for 10 ns;
-
-        clk <= '1';
-        di  <= '0';
-        wait for 10 ns;
-    end process;
-
     dut : lut_slice
     port map(
         clk_i   => clk,
@@ -73,5 +39,41 @@ begin
         q       => q,
         f       => f
     );
+
+    process
+
+        procedure clock is begin
+            clk <= '1';
+            wait for 10 ns;
+            clk <= '0';
+            wait for 10 ns;
+        end procedure clock;
+
+    begin
+
+        wait for 10 ns;
+        a   <= '1';
+        b   <= '1';
+
+        -- lut for AND gate
+        di <= '1';
+        wait for 10 ns;
+        clock;
+
+        di  <= '0';
+        wait for 10 ns;
+        clock;
+
+        di  <= '0';
+        wait for 10 ns;
+        clock;
+
+        di  <= '0';
+        wait for 10 ns;
+        clock;
+
+        wait;
+
+    end process;
 
 end behavior;
