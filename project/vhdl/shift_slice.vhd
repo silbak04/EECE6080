@@ -10,9 +10,24 @@ entity shift_slice is
     );
 end shift_slice;
 
-architecture rtl of shift_slice is begin
+architecture rtl of shift_slice is
 
-    ff_p1 : entity work.dffposx1 port map(clk_i, p, q);
+    component dffposx1
+        port(
+            clk : in std_logic;
+            d   : in std_logic;
+            q   : out std_logic
+        );
+    end component;
+
+begin
+
+    ff_p1 : dffposx1
+    port map(
+        clk => clk_i,
+        d   => p,
+        q   => q
+    );
 
     clk_o <= clk_i;
 

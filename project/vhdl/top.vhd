@@ -18,6 +18,19 @@ end top;
 
 architecture rtl of top is
 
+    component lut is
+        port(
+            s_clk : in std_logic;   -- shift register clock
+            l_clk : in std_logic;   -- lut shift register clock
+            s_in  : in std_logic;   -- shift register input (P)
+            l_in  : in std_logic;   -- lut shift register input
+            t_po  : out std_logic;  -- p_out for test mode
+            t_co  : out std_logic;  -- p_clk for test mode
+            f_o   : out std_logic;  -- final output of computation
+            q_o   : out std_logic   -- final lut shift register output
+        );
+    end component;
+
     signal shift_clk : std_logic := '0';
     signal l_shf_in  : std_logic := '0';
     signal p_out     : std_logic := '0';

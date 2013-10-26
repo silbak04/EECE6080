@@ -1,5 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
+use ieee.math_real.all;
 
 entity lut is
     generic(
@@ -28,6 +29,27 @@ architecture rtl of lut is
     -- lut connection diagram
     -- l_in -> D -> E -> F -> G -> B -> C -> A
 
+    component shift_slice is
+        port(
+            clk_i   : in std_logic;
+            p       : in std_logic;
+            clk_o   : out std_logic;
+            q       : out std_logic
+        );
+    end component;
+
+    component lut_slice is
+        port(
+            clk_i   : in std_logic;
+            d       : in std_logic;
+            a       : in std_logic;
+            b       : in std_logic;
+            clk_o   : out std_logic;
+            q       : out std_logic;
+            f       : out std_logic
+        );
+    end component;
+
     -- carray_array(row, col)
     type carry_array is array (0 to n, 0 to 2**n) of std_logic;
     signal clk_c : carry_array;
@@ -50,7 +72,7 @@ begin
 
     -- generate the input shift register
     shift_gen : for i in 0 to (2**n)-1 generate
-        ff_i : entity work.shift_slice
+        ff_i : shift_slice
         port map(
             clk_i => p_clk(i),
             clk_o => p_clk(i+1),
@@ -62,7 +84,7 @@ begin
     -- generate the tree
     level_gen : for level in 0 to n-1 generate
         lut_gen : for i in 0 to (2**level)-1 generate
-            lut_i : entity work.lut_slice
+            lut_i : lut_slice
             port map(
                  clk_i => clk_c(level, i),
                  clk_o => clk_c(level, i+1),
