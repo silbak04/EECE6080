@@ -8,7 +8,7 @@ end lut_slice_tb;
 architecture behavior of lut_slice_tb is
 
     signal clk      : std_logic := '0';
-    signal clk_o    : std_logic;
+    --signal clk_o    : std_logic;
     signal di       : std_logic := '0';
     signal a        : std_logic := '0';
     signal b        : std_logic := '0';
@@ -18,7 +18,7 @@ architecture behavior of lut_slice_tb is
     component lut_slice
         port(
             clk_i   : in std_logic;
-            clk_o   : out std_logic;
+            --clk_o   : out std_logic;
             d       : in std_logic;
             a       : in std_logic;
             b       : in std_logic;
@@ -32,7 +32,7 @@ begin
     dut : lut_slice
     port map(
         clk_i   => clk,
-        clk_o   => clk_o,
+        --clk_o   => clk_o,
         d       => di,
         a       => a,
         b       => b,
