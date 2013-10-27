@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 
 entity top is
     generic(
-       n      : integer := 3    -- number of levels in tree
+       n      : integer := 2    -- number of levels in tree
    );
     port(
         p_clk : in std_logic;   -- shift register clock
@@ -34,13 +34,12 @@ architecture rtl of top is
     signal shift_clk : std_logic := '0';
     signal l_shf_in  : std_logic := '0';
     signal p_out     : std_logic := '0';
-    signal p_clko    : std_logic := '0';
 
 begin
 
     -- test mux connects output of P into input of LUT and use same clock line
-    t_mux_1 : entity work.mux2x1 port map(l_clk, p_clko, t_en, shift_clk);
-    t_mux_2 : entity work.mux2x1 port map(l_in,  p_out,  t_en, l_shf_in);
+    t_mux_1 : entity work.mux2x1 port map(l_clk, p_clk, t_en, shift_clk);
+    t_mux_2 : entity work.mux2x1 port map(l_in,  p_out, t_en, l_shf_in);
 
     lut_1 : entity work.lut
     port map(
@@ -49,7 +48,6 @@ begin
         s_in    => p_in,
         l_in    => l_shf_in,
         t_po    => p_out,
-        t_co    => p_clko,
         f_o     => f_o,
         q_o     => q_o
     );
