@@ -1,0 +1,96 @@
+magic
+tech scmos
+timestamp 1382959983
+<< metal1 >>
+rect 316 365 320 378
+rect 316 361 685 365
+rect 356 299 517 303
+rect 203 174 258 178
+rect 121 49 125 174
+rect 135 166 167 170
+rect 203 160 246 164
+rect 254 49 258 174
+rect 356 164 360 299
+rect 588 295 609 299
+rect 517 291 552 295
+rect 322 160 360 164
+rect 290 154 294 160
+rect 290 150 310 154
+rect 377 49 381 174
+rect 466 170 512 174
+rect 391 166 430 170
+rect 466 160 501 164
+rect 508 49 512 170
+rect 517 -18 521 291
+rect 588 285 598 289
+rect 605 164 609 295
+rect 681 289 685 361
+rect 616 285 656 289
+rect 664 285 685 289
+rect 652 278 656 285
+rect 539 160 572 164
+rect 580 160 612 164
+rect 568 154 572 160
+rect 387 -22 521 -18
+rect 387 -34 391 -22
+<< m2contact >>
+rect 517 299 521 303
+rect 560 299 564 303
+rect 121 174 125 178
+rect 175 174 179 178
+rect 131 166 135 170
+rect 246 160 250 164
+rect 290 160 294 164
+rect 377 174 381 178
+rect 438 174 442 178
+rect 387 166 391 170
+rect 501 160 505 164
+rect 598 285 602 289
+rect 612 285 616 289
+rect 535 160 539 164
+<< metal2 >>
+rect 521 299 560 303
+rect 602 285 612 289
+rect 125 174 175 178
+rect 381 174 438 178
+rect 131 -18 135 166
+rect 250 160 290 164
+rect 387 48 391 166
+rect 505 160 535 164
+rect 387 -18 391 45
+rect 131 -22 391 -18
+rect 255 -35 259 -22
+use MUX2X1  MUX2X1_2
+timestamp 1053021328
+transform 1 0 550 0 1 252
+box -5 -3 53 105
+use INVX1  INVX1_2
+timestamp 1053022145
+transform 1 0 650 0 1 251
+box -9 -3 26 105
+use MUX2X1  MUX2X1_0
+timestamp 1053021328
+transform 1 0 165 0 1 127
+box -5 -3 53 105
+use INVX1  INVX1_0
+timestamp 1053022145
+transform 1 0 308 0 1 127
+box -9 -3 26 105
+use MUX2X1  MUX2X1_1
+timestamp 1053021328
+transform 1 0 428 0 1 127
+box -5 -3 53 105
+use INVX1  INVX1_1
+timestamp 1053022145
+transform 1 0 566 0 1 127
+box -9 -3 26 105
+use shift_lut_slice  shift_lut_slice_0
+array 0 3 128 0 0 108
+timestamp 1382949514
+transform 1 0 8 0 1 0
+box -8 0 120 108
+<< labels >>
+rlabel metal1 387 -34 391 -30 0 B
+rlabel metal2 255 -35 259 -31 0 A
+rlabel metal1 316 374 320 378 0 F
+<< end >>
