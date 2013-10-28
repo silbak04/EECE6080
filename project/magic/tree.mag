@@ -1,0 +1,18 @@
+magic
+tech scmos
+timestamp 1382962255
+use lut  lut_2
+timestamp 1382961694
+transform 1 0 -2 0 1 226
+box 0 0 593 108
+use lut  lut_1
+array 0 1 587 0 0 108
+timestamp 1382961694
+transform 1 0 -2 0 1 113
+box 0 0 593 108
+use lut  lut_0
+array 0 3 587 0 0 108
+timestamp 1382961694
+transform 1 0 -2 0 1 0
+box 0 0 593 108
+<< end >>
