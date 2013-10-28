@@ -1,0 +1,21 @@
+magic
+tech scmos
+timestamp 1382939429
+<< metal1 >>
+rect -8 45 21 49
+rect 102 45 120 49
+rect -8 36 14 40
+<< m2contact >>
+rect 67 36 71 40
+<< metal2 >>
+rect 71 36 120 40
+use DFFPOSX1  DFFPOSX1_0
+timestamp 1048618183
+transform 1 0 8 0 1 3
+box -8 -3 104 105
+<< labels >>
+rlabel metal1 -8 36 -4 40 0 PCLKI
+rlabel metal1 -8 45 -4 49 0 P_IN
+rlabel metal2 116 36 120 40 0 PCLKO
+rlabel metal1 116 45 120 49 0 P_OUT
+<< end >>
