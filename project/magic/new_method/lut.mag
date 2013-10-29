@@ -1,0 +1,62 @@
+magic
+tech scmos
+timestamp 1383040295
+<< nwell >>
+rect 400 51 404 108
+<< metal1 >>
+rect 394 100 407 106
+rect 585 100 593 106
+rect 7 46 25 49
+rect 102 46 121 49
+rect 198 46 217 49
+rect 294 46 313 49
+rect 584 40 587 93
+rect 581 36 587 40
+rect 394 0 407 6
+rect 585 0 593 6
+<< m2contact >>
+rect 584 93 588 97
+rect 3 46 7 50
+rect 98 46 102 50
+rect 194 46 198 50
+rect 290 46 294 50
+rect 386 46 390 50
+rect 18 36 22 40
+rect 114 36 118 40
+rect 210 36 214 40
+rect 306 36 310 40
+<< metal2 >>
+rect 584 97 588 106
+rect 6 80 593 84
+rect 18 40 22 80
+rect 98 4 102 46
+rect 114 40 118 80
+rect 194 10 198 46
+rect 210 40 214 80
+rect 290 16 294 46
+rect 306 40 310 80
+rect 386 71 411 74
+rect 505 71 593 74
+rect 386 50 390 71
+rect 393 65 411 68
+rect 393 16 396 65
+rect 290 13 396 16
+rect 399 59 411 62
+rect 399 10 402 59
+rect 194 7 402 10
+rect 405 53 411 56
+rect 405 4 408 53
+rect 590 50 593 71
+rect 98 1 408 4
+use DFFPOSX1  DFFPOSX1_0
+array 0 3 96 0 0 108
+timestamp 1382961109
+transform 1 0 8 0 1 3
+box -8 -3 104 105
+use mux_4_to_1  mux_4_to_1_0
+timestamp 1382961109
+transform 1 0 404 0 1 0
+box 0 0 189 108
+<< labels >>
+rlabel metal2 584 97 588 106 0 F
+<< end >>
