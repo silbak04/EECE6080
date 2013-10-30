@@ -42,6 +42,7 @@ architecture rtl of lut_slice_del is
     -- flip flop and mux outputs
     signal ff_o     : std_logic_vector(4 downto 0) := (others => '0');
     signal mux_o    : std_logic_vector(1 downto 0) := (others => '0');
+    signal mux_fo   : std_logic_vector(1 downto 0) := (others => '0');
     signal f_muxo   : std_logic := '0';
 
 begin
@@ -63,16 +64,18 @@ begin
     -- select first two outputs of LUT
     -- on sel line A
     mux1 : mux2x1_del port map(ff_o(1), ff_o(2), a, mux_o(0));
+    inv1 : invx1_del  port map(mux_o(0), mux_fo(0));
 
     -- select last two outputs of LUT
     -- on sel line A
     mux2 : mux2x1_del port map(ff_o(3), ff_o(4), a, mux_o(1));
+    inv2 : invx1_del  port map(mux_o(1), mux_fo(1));
 
     -- select the outputs from
     -- each mux on sel line B
     mux3 : mux2x1_del port map(mux_o(0), mux_o(1), b, f_muxo);
 
     -- invert mux due to func of mux: y = !(S?(A:B))
-    inv1 : invx1_del port map(f_muxo, f);
+    inv3 : invx1_del port map(f_muxo, f);
 
 end rtl;
