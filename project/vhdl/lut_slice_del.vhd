@@ -23,6 +23,13 @@ architecture rtl of lut_slice_del is
         );
     end component;
 
+    component invx1_del is
+        port(
+            a   : in std_logic;
+            x   : out std_logic
+        );
+    end component;
+
     component mux2x1_del is
         port(
             a : in std_logic;
@@ -66,6 +73,6 @@ begin
     mux3 : mux2x1_del port map(mux_o(0), mux_o(1), b, f_muxo);
 
     -- invert mux due to func of mux: y = !(S?(A:B))
-    inv1 : inv1x1_del port map(f_muxo, f);
+    inv1 : invx1_del port map(f_muxo, f);
 
 end rtl;

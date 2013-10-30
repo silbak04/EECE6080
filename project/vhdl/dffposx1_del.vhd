@@ -10,7 +10,7 @@ entity dffposx1_del is
         d   : in std_logic;
         q   : out std_logic
     );
-end dffposx1;
+end dffposx1_del;
 
 architecture rtl of dffposx1_del is begin
     process(clk) begin

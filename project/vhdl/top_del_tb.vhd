@@ -10,7 +10,7 @@ entity top_del_tb is
     );
 end top_del_tb;
 
-architecture behavior of top_tb_del is
+architecture behavior of top_del_tb is
 
     constant n : integer := 2;
 

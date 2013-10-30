@@ -6,8 +6,8 @@ entity mux2x1_del is
         delay : time := 315 ps
     );
     port(
-        a : in std_logic;
         b : in std_logic;
+        a : in std_logic;
         s : in std_logic;
         x : out std_logic
     );
