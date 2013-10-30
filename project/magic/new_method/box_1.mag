@@ -1,0 +1,12 @@
+magic
+tech scmos
+timestamp 1383053093
+use lut_p_tree  lut_p_tree_1
+timestamp 1383052641
+transform 1 0 -630 0 1 569
+box -15 -6 2409 736
+use lut_p_tree  lut_p_tree_0
+timestamp 1383052641
+transform 1 0 -630 0 1 -183
+box -15 -6 2409 736
+<< end >>
