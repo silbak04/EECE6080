@@ -100,7 +100,7 @@ begin
     -- first slice in row i connects to
     -- last slice in row i+1
     lut_connect : for level in 0 to n-2 generate
-        l_c(level, 0)   <= l_c(level+1, (2**level+1));
+        l_c(level, 0) <= l_c(level+1, (2**level+1));
     end generate;
 
     -- connect input shift register to bottom row of slices

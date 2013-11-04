@@ -5,13 +5,14 @@ use work.txt_util.all;
 
 entity top_tb is
     generic(
-        stim_file : string := "test_tree.sim"
+        --stim_file : string := "test_tree.sim"
+        stim_file : string := "two_tree.sim"
     );
 end top_tb;
 
 architecture behavior of top_tb is
 
-    constant n : integer := 3;
+    constant n : integer := 2;
 
     signal p_clk : std_logic := '0';
     signal l_clk : std_logic := '0';

@@ -12,5 +12,5 @@ entity invx1 is
 end invx1;
 
 architecture rtl of invx1 is begin
-    x <= not a after delay;
+    x <= not(a) after delay;
 end rtl;
