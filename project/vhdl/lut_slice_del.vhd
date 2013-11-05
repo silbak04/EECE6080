@@ -32,8 +32,8 @@ architecture rtl of lut_slice_del is
 
     component mux2x1_del is
         port(
-            a : in std_logic;
             b : in std_logic;
+            a : in std_logic;
             s : in std_logic;
             x : out std_logic
         );
@@ -63,17 +63,17 @@ begin
 
     -- select first two outputs of LUT
     -- on sel line A
-    mux1 : mux2x1_del port map(ff_o(1), ff_o(2), a, mux_o(0));
+    mux1 : mux2x1_del port map(ff_o(1),  ff_o(2), a, mux_o(0));
     inv1 : invx1_del  port map(mux_o(0), mux_fo(0));
 
     -- select last two outputs of LUT
     -- on sel line A
-    mux2 : mux2x1_del port map(ff_o(3), ff_o(4), a, mux_o(1));
+    mux2 : mux2x1_del port map(ff_o(3),  ff_o(4), a, mux_o(1));
     inv2 : invx1_del  port map(mux_o(1), mux_fo(1));
 
     -- select the outputs from
     -- each mux on sel line B
-    mux3 : mux2x1_del port map(mux_o(0), mux_o(1), b, f_muxo);
+    mux3 : mux2x1_del port map(mux_fo(0), mux_fo(1), b, f_muxo);
 
     -- invert mux due to func of mux: y = !(S?(A:B))
     inv3 : invx1_del port map(f_muxo, f);

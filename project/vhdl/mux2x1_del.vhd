@@ -15,7 +15,7 @@ end mux2x1_del;
 
 architecture rtl of mux2x1_del is begin
 
-    x <= b after delay when (s = '0') else
-         a after delay when (s = '1');
+    x <= not(b) after delay when (s = '0') else
+         not(a) after delay when (s = '1');
 
 end rtl;

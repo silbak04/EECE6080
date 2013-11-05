@@ -6,8 +6,8 @@ entity mux2x1 is
         delay : time := 0 ps
     );
     port(
-        a : in std_logic;
         b : in std_logic;
+        a : in std_logic;
         s : in std_logic;
         x : out std_logic
     );
@@ -15,7 +15,7 @@ end mux2x1;
 
 architecture rtl of mux2x1 is begin
 
-    x <= a after delay when (s = '0') else
-         b after delay when (s = '1');
+    x <= not(b) after delay when (s = '0') else
+         not(a) after delay when (s = '1');
 
 end rtl;

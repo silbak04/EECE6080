@@ -18,28 +18,20 @@ end top;
 
 architecture rtl of top is
 
-    component lut is
-        port(
-            s_clk : in std_logic;   -- shift register clock
-            l_clk : in std_logic;   -- lut shift register clock
-            s_in  : in std_logic;   -- shift register input (P)
-            l_in  : in std_logic;   -- lut shift register input
-            t_po  : out std_logic;  -- p_out for test mode
-            t_co  : out std_logic;  -- p_clk for test mode
-            f_o   : out std_logic;  -- final output of computation
-            q_o   : out std_logic   -- final lut shift register output
-        );
-    end component;
-
-    signal shift_clk : std_logic := '0';
-    signal l_shf_in  : std_logic := '0';
-    signal p_out     : std_logic := '0';
+    signal shift_clki   : std_logic := '0';
+    signal shift_clk    : std_logic := '0';
+    signal l_shf_ini    : std_logic := '0';
+    signal l_shf_in     : std_logic := '0';
+    signal p_out        : std_logic := '0';
 
 begin
 
     -- test mux connects output of P into input of LUT and use same clock line
-    t_mux_1 : entity work.mux2x1 port map(l_clk, p_clk, t_en, shift_clk);
-    t_mux_2 : entity work.mux2x1 port map(l_in,  p_out, t_en, l_shf_in);
+    t_mux_1 : entity work.mux2x1 port map(l_clk, p_clk, t_en, shift_clki);
+    t_mux_2 : entity work.mux2x1 port map(l_in,  p_out, t_en, l_shf_ini);
+
+    t_inv_1 : entity work.invx1  port map(shift_clki, shift_clk);
+    t_inv_2 : entity work.invx1  port map(l_shf_ini, l_shf_in);
 
     lut_1 : entity work.lut
     port map(

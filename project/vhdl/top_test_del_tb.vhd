@@ -3,14 +3,14 @@ use ieee.std_logic_1164.all;
 use std.textio.all;
 use work.txt_util.all;
 
-entity top_test_tb is
-end top_test_tb;
+entity top_test_del_tb is
+end top_test_del_tb;
 
-architecture behavior of top_test_tb is
+architecture behavior of top_test_del_tb is
 
     constant n : integer := 2;
 
-    component top
+    component top_del
         generic(
            n      : integer := 3    -- number of levels in tree
        );
@@ -35,7 +35,7 @@ architecture behavior of top_test_tb is
 
 begin
 
-    dut : top
+    dut : top_del
     generic map(
         n     => n
     )
