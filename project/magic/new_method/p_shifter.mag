@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1383046086
+timestamp 1383633248
 << metal1 >>
 rect 102 46 121 49
 rect 202 46 221 49
@@ -9,15 +9,22 @@ rect 402 46 421 49
 rect 502 46 521 49
 rect 602 46 621 49
 rect 702 46 721 49
+rect -5 37 14 40
+rect 69 37 87 40
 rect 169 37 188 40
+rect 269 37 288 40
 rect 368 37 388 40
 rect 469 37 490 40
 rect 569 37 588 40
 rect 669 37 689 40
 rect 769 37 790 40
 << m2contact >>
+rect 87 37 91 41
+rect 118 36 122 40
 rect 188 37 192 41
 rect 218 36 222 40
+rect 288 37 292 41
+rect 318 36 322 40
 rect 388 37 392 41
 rect 418 36 422 40
 rect 490 37 494 41
@@ -28,14 +35,20 @@ rect 689 37 693 41
 rect 718 36 722 40
 rect 790 37 794 41
 << metal2 >>
+rect 88 17 91 37
+rect 118 17 121 36
+rect 88 14 121 17
 rect 189 15 192 37
 rect 218 15 221 36
+rect 289 21 292 37
+rect 318 21 321 36
+rect 289 18 321 21
 rect 389 21 392 37
 rect 419 21 422 36
 rect 389 18 422 21
 rect 490 21 493 37
 rect 518 21 521 36
-rect 589 25 593 37
+rect 589 25 592 37
 rect 619 25 622 36
 rect 589 22 622 25
 rect 690 24 693 37
@@ -46,9 +59,13 @@ rect 718 20 722 21
 rect 790 22 793 37
 rect 790 19 811 22
 rect 189 12 221 15
+use BUFX4  BUFX4_0
+timestamp 1053722803
+transform 1 0 -27 0 1 3
+box -9 -3 37 105
 use DFFPOSX1  DFFPOSX1_0
 array 0 7 100 0 0 108
-timestamp 1382961109
+timestamp 1383129201
 transform 1 0 8 0 1 3
 box -8 -3 104 105
 << end >>
