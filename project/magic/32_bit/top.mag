@@ -1,0 +1,12 @@
+magic
+tech scmos
+timestamp 1383993352
+use box_1  box_1_0
+timestamp 1383993352
+transform 1 0 -1163 0 1 -114
+box -1008 -958 1968 2053
+use IIT_Frame_PR  IIT_Frame_PR_0
+timestamp 1072203966
+transform 1 0 -3186 0 1 -2064
+box 4 0 5004 5000
+<< end >>
