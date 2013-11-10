@@ -6,13 +6,14 @@ use work.txt_util.all;
 entity top_del_tb is
     generic(
         --stim_file : string := "test_tree.sim"
-        stim_file : string := "two_tree.sim"
+        --stim_file : string := "two_tree.sim"
+        stim_file : string := "top_32.sim"
     );
 end top_del_tb;
 
 architecture behavior of top_del_tb is
 
-    constant n : integer := 2;
+    constant n : integer := 5;
 
     signal p_clk : std_logic := '0';
     signal l_clk : std_logic := '0';

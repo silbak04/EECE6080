@@ -8,7 +8,7 @@ end top_test_del_tb;
 
 architecture behavior of top_test_del_tb is
 
-    constant n : integer := 2;
+    constant n : integer := 5;
 
     component top_del
         generic(

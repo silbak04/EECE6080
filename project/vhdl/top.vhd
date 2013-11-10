@@ -34,6 +34,9 @@ begin
     t_inv_2 : entity work.invx1  port map(l_shf_ini, l_shf_in);
 
     lut_1 : entity work.lut
+    generic map(
+        n       => n
+    )
     port map(
         s_clk   => p_clk,
         l_clk   => shift_clk,
