@@ -1,0 +1,84 @@
+magic
+tech scmos
+timestamp 1383999432
+<< metal1 >>
+rect -134 445 -124 490
+rect -134 439 -102 445
+rect -134 331 -124 439
+rect -91 345 -81 490
+rect -67 439 2 445
+rect -91 339 6 345
+rect -134 325 -102 331
+rect -134 219 -124 325
+rect -91 232 -81 339
+rect -67 331 1 332
+rect -67 326 2 331
+rect -91 226 8 232
+rect -134 213 -102 219
+rect -134 106 -124 213
+rect -91 119 -81 226
+rect -67 213 1 219
+rect -6 159 3 162
+rect -91 113 7 119
+rect -134 100 -102 106
+rect -134 -1 -124 100
+rect -91 6 -81 113
+rect -67 100 794 106
+rect 777 46 798 50
+rect 824 46 844 49
+rect -91 0 794 6
+<< m2contact >>
+rect -102 439 -95 446
+rect -74 439 -67 446
+rect -102 325 -95 332
+rect -74 325 -67 332
+rect -102 213 -95 220
+rect -74 213 -67 220
+rect -102 100 -95 107
+rect -74 100 -67 107
+<< metal2 >>
+rect -13 465 658 469
+rect -95 439 -74 445
+rect -13 389 -9 465
+rect 2 457 649 461
+rect 2 419 7 457
+rect 584 445 588 453
+rect 590 389 599 392
+rect -13 385 3 389
+rect 644 352 649 457
+rect 653 360 658 465
+rect 653 356 1202 360
+rect 644 348 1194 352
+rect -95 325 -74 331
+rect 1190 310 1194 348
+rect -60 306 3 310
+rect 1179 306 1194 310
+rect -95 213 -74 219
+rect -95 100 -74 106
+rect -60 -26 -56 306
+rect 1198 280 1202 356
+rect 1179 276 1202 280
+rect -53 272 3 276
+rect -53 -19 -48 272
+rect -6 193 3 196
+rect 2354 193 2360 197
+rect 1635 80 1644 84
+rect 2351 -19 2354 163
+rect -53 -23 2354 -19
+rect 2357 -26 2360 193
+rect -60 -30 2360 -26
+use tree  tree_0
+timestamp 1383979221
+transform 1 0 2 0 1 113
+box -2 -113 2352 334
+<< labels >>
+rlabel metal2 1635 80 1644 84 0 P_OUT
+rlabel metal1 777 46 786 50 0 PCLKI
+rlabel metal1 824 46 833 49 0 P_IN
+rlabel metal1 -6 159 3 162 0 L_IN
+rlabel metal2 590 389 599 392 0 L_OUT
+rlabel metal2 584 445 588 453 0 F
+rlabel metal1 -91 482 -81 490 0 GND
+rlabel metal1 -134 482 -124 490 0 VDD
+rlabel metal2 -6 193 3 196 0 LCLKI
+<< end >>

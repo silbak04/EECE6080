@@ -1,16 +1,6 @@
 magic
 tech scmos
-timestamp 1383647959
-<< error_s >>
-rect 1170 49 1172 52
-rect 1757 49 1759 52
-rect 1173 46 1175 49
-rect 1760 46 1762 49
-<< error_ps >>
-rect 583 162 585 165
-rect 586 159 588 162
-rect 583 49 585 52
-rect 586 46 588 49
+timestamp 1383979221
 << m2contact >>
 rect 919 -69 923 -65
 rect 1019 -70 1023 -66
@@ -68,17 +58,17 @@ rect 2287 -29 2290 0
 rect 1619 -33 2290 -29
 rect 1619 -66 1623 -33
 use lut  lut_2
-timestamp 1383530834
+timestamp 1383979221
 transform 1 0 -2 0 1 226
 box 0 0 593 108
 use lut  lut_1
 array 0 1 587 0 0 108
-timestamp 1383530834
+timestamp 1383979221
 transform 1 0 -2 0 1 113
 box 0 0 593 108
 use lut  lut_0
 array 0 3 587 0 0 108
-timestamp 1383530834
+timestamp 1383979221
 transform 1 0 -2 0 1 0
 box 0 0 593 108
 use p_shifter  p_shifter_0
