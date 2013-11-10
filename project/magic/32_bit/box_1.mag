@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1384050702
+timestamp 1384084018
 << metal1 >>
 rect 325 2038 338 2050
 rect -1006 2029 -708 2038
@@ -92,6 +92,7 @@ rect -986 270 -978 506
 rect 87 504 90 507
 rect -755 499 -701 502
 rect -97 499 -80 502
+rect -850 482 -846 494
 rect -837 482 -833 494
 rect -755 490 -701 493
 rect 918 444 1931 450
@@ -262,6 +263,8 @@ rect -759 499 -755 503
 rect -701 499 -697 503
 rect -101 498 -97 502
 rect -80 498 -76 502
+rect -850 494 -846 498
+rect -850 478 -846 482
 rect -837 494 -833 498
 rect -759 490 -755 494
 rect -701 490 -697 494
@@ -453,9 +456,10 @@ rect -986 570 -978 594
 rect -1019 561 -986 570
 rect -1019 507 -992 516
 rect -996 491 -992 507
-rect -850 491 -846 801
+rect -850 498 -846 801
 rect -837 498 -833 808
-rect -996 487 -826 491
+rect -996 487 -850 491
+rect -846 487 -826 491
 rect -1019 294 -978 303
 rect -986 270 -978 294
 rect -1019 261 -986 270
@@ -470,7 +474,7 @@ rect -1019 -93 -1011 -84
 rect -1014 -193 -1011 -93
 rect -991 -179 -975 -173
 rect -966 -186 -963 207
-rect -850 -185 -846 487
+rect -850 -185 -846 478
 rect -837 -152 -833 478
 rect -830 -185 -826 487
 rect -819 -130 -816 1287
@@ -539,10 +543,7 @@ rect 923 646 932 650
 rect 1972 617 1975 797
 rect 46 609 63 612
 rect 1956 613 1975 617
-rect 51 588 57 590
-rect -528 586 -525 587
-rect 50 586 57 588
-rect -524 584 -521 586
+rect 50 586 57 590
 rect 54 560 57 586
 rect 60 569 63 609
 rect 129 579 132 611
@@ -686,49 +687,48 @@ rect 1938 -958 1947 -917
 << m1p >>
 rect -128 1622 -124 1626
 rect -93 1622 -89 1626
-use lut lut_1
+use lut  lut_1
 timestamp 1383979221
 transform 1 0 -742 0 1 1572
 box 0 0 593 108
-use shift_slice shift_slice_0
+use shift_slice  shift_slice_0
 timestamp 1383130333
 transform 1 0 1527 0 1 1597
 box 0 0 112 108
-use lut_p_tree lut_p_tree_1
-timestamp 1383979221
+use lut_p_tree  lut_p_tree_1
+timestamp 1384083119
 transform 1 0 -630 0 1 576
 box -82 -10 2429 733
-use lut lut_0
+use lut  lut_0
 timestamp 1383979221
 transform 1 0 -542 0 1 506
 box 0 0 593 108
-use BUFX4 BUFX4_0
+use BUFX4  BUFX4_0
 timestamp 1053722803
 transform 1 0 -740 0 1 -77
 box -9 -3 37 105
-use mux mux_0
+use mux  mux_0
 timestamp 1382957000
 transform -1 0 -679 0 -1 -84
 box -2 0 71 108
-use mux mux_1
+use mux  mux_1
 timestamp 1382957000
 transform 1 0 -685 0 -1 -84
 box -2 0 71 108
-use lut_p_tree lut_p_tree_0
-timestamp 1383979221
+use lut_p_tree  lut_p_tree_0
+timestamp 1384083119
 transform 1 0 -630 0 1 -183
 box -82 -10 2429 733
-use INVX1 INVX1_0
+use INVX1  INVX1_0
 timestamp 1053022145
 transform 1 0 -750 0 1 -610
 box -9 -3 26 105
-use DFFPOSX1 DFFPOSX1_0
+use DFFPOSX1  DFFPOSX1_0
 timestamp 1383129201
 transform 1 0 -535 0 1 -610
 box -8 -3 104 105
 << labels >>
 rlabel m2contact -820 -205 -816 -201 0 L_IN
-rlabel m2contact -820 -189 -816 -185 0 LCLKI
 rlabel metal2 73 -142 77 -139 0 P_IN
 rlabel metal2 1778 576 1781 580 0 F
 rlabel metal1 1959 2029 1968 2038 0 VDD
@@ -739,7 +739,6 @@ rlabel m2contact 1940 2011 1948 2020 0 GND
 rlabel metal2 923 -113 932 -109 0 PQ0
 rlabel metal2 68 466 77 470 0 PQ1
 rlabel metal2 923 646 932 650 0 PQ2
-rlabel metal2 66 654 75 657 0 PQ2_1
 rlabel metal2 1642 -31 1647 -28 0 LO_0
 rlabel metal2 -647 385 -642 388 0 LO_1
 rlabel metal2 1642 728 1647 731 0 LO_2
@@ -757,6 +756,8 @@ rlabel metal2 502 982 508 985 0 LO_13
 rlabel metal1 81 613 86 616 0 BUFFI
 rlabel metal1 107 603 112 606 0 BUFFO
 rlabel metal2 1778 536 1781 540 0 L_OUT
-rlabel metal1 73 -147 77 -143 0 PCLKI
 rlabel m2contact -820 -197 -816 -193 0 TMEI
+rlabel m2contact -820 -189 -816 -185 0 LCLKI
+rlabel metal1 73 -147 77 -143 0 PCLKI
+rlabel metal2 66 654 75 657 0 PQ2_1
 << end >>
