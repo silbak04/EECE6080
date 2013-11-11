@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1383647763
+timestamp 1384140532
 << metal1 >>
 rect 102 46 121 49
 rect 202 46 221 49
@@ -59,10 +59,6 @@ rect 718 20 722 21
 rect 790 22 793 37
 rect 790 19 811 22
 rect 189 12 221 15
-use BUFX4  BUFX4_0
-timestamp 1053722803
-transform 1 0 -27 0 1 3
-box -9 -3 37 105
 use DFFPOSX1  DFFPOSX1_0
 array 0 7 100 0 0 108
 timestamp 1383129201

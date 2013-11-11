@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1383979221
+timestamp 1384140532
 << m2contact >>
 rect 919 -69 923 -65
 rect 1019 -70 1023 -66
@@ -72,7 +72,7 @@ timestamp 1383979221
 transform 1 0 -2 0 1 0
 box 0 0 593 108
 use p_shifter  p_shifter_0
-timestamp 1383647763
+timestamp 1384140532
 transform 1 0 821 0 1 -113
-box -36 0 812 108
+box -5 0 812 108
 << end >>
