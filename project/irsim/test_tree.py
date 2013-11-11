@@ -1,11 +1,11 @@
-N_P = 32
+N_P = 8
 #N_L = (N_P-1)*4
 N_L = (N_P-1)
 
-with open("top.cmd", "w") as f:
+with open("test_tree.cmd", "w") as f:
 
     f.write("stepsize 10\n")
-    f.write("logfile top.log\n")
+    f.write("logfile test_tree.log\n")
 
     f.write("h VDD\n")
     f.write("l GND\n")
@@ -13,16 +13,16 @@ with open("top.cmd", "w") as f:
     f.write("vector P_CLK PCLKI\n")
     f.write("vector L_CLK LCLKI\n")
 
-    f.write("w   VDD GND TMEI TII TIO PCLKI PCLKO LCLKI LCLKO P_IN P_OUT L_IN L_OUT F\n")
-    f.write("ana VDD GND TMEI TII TIO PCLKI PCLKO LCLKI LCLKO P_IN P_OUT L_IN L_OUT F\n")
+    f.write("w   PCLKI LCLKI P_IN L_IN L_OUT P_OUT F\n")
+    f.write("ana PCLKI LCLKI P_IN L_IN L_OUT P_OUT F\n")
 
-    #f.write("h TMEI\n")
     f.write("l TMEI\n")
+    #f.write("l TMEO\n")
 
 p_in = ['1']
 def p_input(p_in_bits):
 
-    with open("top.cmd", "a") as f:
+    with open("test_tree.cmd", "a") as f:
         f.write("clock P_CLK 0 1\n")
         for x in range(N_P):
             for i in p_in_bits:
@@ -45,7 +45,7 @@ lut_xor   = ['0','1','1','0']
 
 def lut_input(lut_function):
 
-    with open("top.cmd", "a") as f:
+    with open("test_tree.cmd", "a") as f:
         f.write("clock L_CLK 0 1\n")
         for x in range(N_L):
             for i in lut_function:
@@ -58,18 +58,7 @@ def lut_input(lut_function):
         # disable l_clk
         f.write("clock L_CLK 0 0\n")
 
-t_i = ['0', '1']
-def test_slices(test_inverter):
 
-    with open("top.cmd", "a") as f:
-        #for x in range(len(t_i)):
-        for i in t_i:
-            if i == "1":
-                f.write("h TII\n")
-            else:
-                f.write("l TII\n")
-
-lut_input(lut_debug)
-#lut_input(lut_nor)
+#lut_input(lut_debug)
+lut_input(lut_and)
 p_input(p_in)
-#test_slices(t_i)
