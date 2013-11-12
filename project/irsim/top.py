@@ -69,7 +69,7 @@ def test_slices(test_inverter):
             else:
                 f.write("l TII\n")
 
-lut_input(lut_debug)
-#lut_input(lut_nor)
+#lut_input(lut_debug)
+lut_input(lut_nor)
 p_input(p_in)
 #test_slices(t_i)
