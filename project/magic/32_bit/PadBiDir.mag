@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 949001176
+timestamp 1384231894
 << nwell >>
 rect 20 740 280 1000
 rect 15 604 286 652
@@ -4580,9 +4580,9 @@ rlabel metal2 150 0 150 0 8 DATA
 rlabel metal2 261 0 261 0 8 DI
 rlabel metal2 248 0 248 0 8 DIB
 rlabel metal2 48 0 48 0 8 DO
-rlabel metal2 15 0 15 0 1 OEN
-rlabel metal2 169 129 169 129 1 gnd:2
-rlabel metal2 132 535 132 535 1 vdd:2
-rlabel metal2 174 307 174 307 1 Vdd:
-rlabel metal2 171 364 171 364 1 Gnd:
+rlabel metal2 15 0 15 0 8 OEN
+rlabel metal2 169 129 169 129 6 gnd:2
+rlabel metal2 132 535 132 535 6 vdd:2
+rlabel metal2 174 307 174 307 6 Vdd:
+rlabel metal2 171 364 171 364 6 Gnd:
 << end >>

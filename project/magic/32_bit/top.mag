@@ -1,42 +1,35 @@
 magic
 tech scmos
-timestamp 1384152548
-<< metal1 >>
-rect -959 2679 -705 2933
-rect 1561 1059 1815 1313
-rect -3179 759 -2925 1013
-rect 1561 759 1815 1013
-rect -3179 459 -2925 713
-rect 1561 459 1815 713
-rect -3179 159 -2925 413
-rect 1561 159 1815 413
-rect -3179 -141 -2925 113
-rect 1561 -141 1815 113
-rect -3179 -441 -2925 -187
-rect -2159 -2061 -1905 -1807
-rect -1859 -2061 -1605 -1807
-rect -659 -2061 -405 -1807
-use box_1  box_1_0
-timestamp 1384152407
+timestamp 1384231894
+<< error_s >>
+rect -1902 1466 -1901 1468
+rect -1629 1084 -1616 1086
+rect 533 1084 546 1086
+rect 533 971 546 973
+rect 533 858 546 860
+rect -1872 799 -1871 801
+rect -1872 686 -1871 688
+rect -1872 573 -1871 575
+rect -1702 400 -1701 402
+rect -1629 325 -1616 327
+rect 533 325 546 327
+rect 533 212 546 214
+rect 533 99 546 101
+rect -1908 40 -1907 42
+rect -1908 -73 -1907 -71
+rect -1908 -186 -1907 -184
+rect -1920 -719 -1917 -712
+rect -1703 -719 -1702 -717
+rect -1920 -724 -1918 -719
+rect -1908 -729 -1906 -724
+<< metal2 >>
+rect -2183 1047 -2182 1056
+use box  box_0
+timestamp 1384231894
 transform 1 0 -1163 0 1 -114
 box -1021 -958 1988 2053
 use IIT_Frame_PR  IIT_Frame_PR_0
-timestamp 1072203966
+timestamp 1384231894
 transform 1 0 -3186 0 1 -2064
 box 4 0 5004 5000
-<< labels >>
-rlabel metal1 -3179 759 -2925 1013 0 PCLKI
-rlabel metal1 -959 2679 -705 2933 0 VDD
-rlabel metal1 -659 -2061 -405 -1807 0 GND
-rlabel metal1 -3179 459 -2925 713 0 LCLKI
-rlabel metal1 -3179 159 -2925 413 0 P_IN
-rlabel metal1 -3179 -141 -2925 113 0 L_IN
-rlabel metal1 -3179 -441 -2925 -187 0 TMEI
-rlabel metal1 1561 -141 1815 113 0 L_OUT
-rlabel metal1 1561 159 1815 413 0 P_OUT
-rlabel metal1 1561 1059 1815 1313 0 F
-rlabel metal1 1561 759 1815 1013 0 PCLKO
-rlabel metal1 1561 459 1815 713 0 LCLKO
-rlabel metal1 -2159 -2061 -1905 -1807 0 TII
-rlabel metal1 -1859 -2061 -1605 -1807 0 TIO
 << end >>

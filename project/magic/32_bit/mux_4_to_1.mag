@@ -1,6 +1,11 @@
 magic
 tech scmos
-timestamp 1383102185
+timestamp 1384231894
+<< error_s >>
+rect 0 8 1 10
+<< pwell >>
+rect 52 -2 58 3
+rect 110 -2 116 3
 << m2contact >>
 rect 7 46 11 50
 rect 15 46 19 50
@@ -37,12 +42,19 @@ rect 123 0 127 46
 rect 131 43 135 46
 rect 162 43 166 60
 rect 131 39 166 43
-use mux  mux_0
-array 0 2 58 0 0 108
-timestamp 1382957000
+use mux  mux_0(0)
+timestamp 1384231894
 transform 1 0 2 0 1 0
-box -2 0 71 108
+box -2 -2 71 108
+use mux  mux_0(1)
+timestamp 1384231894
+transform 1 0 60 0 1 0
+box -2 -2 71 108
+use mux  mux_0(2)
+timestamp 1384231894
+transform 1 0 118 0 1 0
+box -2 -2 71 108
 << labels >>
-rlabel metal2 47 0 51 6 0 A
-rlabel metal2 123 0 127 6 0 B
+rlabel metal2 49 3 49 3 6 A
+rlabel metal2 125 3 125 3 6 B
 << end >>

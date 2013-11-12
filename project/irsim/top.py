@@ -13,8 +13,8 @@ with open("top.cmd", "w") as f:
     f.write("vector P_CLK PCLKI\n")
     f.write("vector L_CLK LCLKI\n")
 
-    f.write("w   VDD GND TMEI TII TIO PCLKI PCLKO LCLKI LCLKO P_IN P_OUT L_IN L_OUT F\n")
-    f.write("ana VDD GND TMEI TII TIO PCLKI PCLKO LCLKI LCLKO P_IN P_OUT L_IN L_OUT F\n")
+    f.write("w   TMEI LCLKI L_IN L_OUT F PCLKI P_IN P_OUT\n")
+    f.write("ana TMEI LCLKI L_IN L_OUT F PCLKI P_IN P_OUT\n")
 
     #f.write("h TMEI\n")
     f.write("l TMEI\n")
@@ -69,7 +69,7 @@ def test_slices(test_inverter):
             else:
                 f.write("l TII\n")
 
-lut_input(lut_debug)
-#lut_input(lut_nor)
+#lut_input(lut_debug)
+lut_input(lut_nor)
 p_input(p_in)
 #test_slices(t_i)

@@ -13,15 +13,11 @@ with open("box.cmd", "w") as f:
     f.write("vector P_CLK PCLKI\n")
     f.write("vector L_CLK LCLKI\n")
 
-    #f.write("vector lin L_IN\n")
-    #f.write("vector pin P_IN\n")
-
     f.write("w   TMEI PCLKI LCLKI P_IN L_IN L_OUT LO_0 LO_1 LO_2 LO_3 LO_4 LO_5 LO_6 LO_7 LO_8 LO_9 LO_10 LO_11 LO_12 LO_13 M1 M2 PQ0 PQ1 PQ2 BUFFI BUFFO P_OUT F\n")
     f.write("ana TMEI PCLKI LCLKI P_IN L_IN L_OUT LO_0 LO_1 LO_2 LO_3 LO_4 LO_5 LO_6 LO_7 LO_8 LO_9 LO_10 LO_11 LO_12 LO_13 M1 M2 PQ0 PQ1 PQ2 BUFFI BUFFO P_OUT F\n")
 
     #f.write("l TMEI\n")
     f.write("l TMEI\n")
-    #f.write("l TMEO\n")
 
 p_in = ['1']
 def p_input(p_in_bits):

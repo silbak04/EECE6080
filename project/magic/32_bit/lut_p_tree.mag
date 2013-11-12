@@ -1,6 +1,19 @@
 magic
 tech scmos
-timestamp 1384142942
+timestamp 1384231894
+<< error_s >>
+rect 1338 622 1351 624
+rect 1925 622 1938 624
+rect 2326 622 2339 624
+rect 1338 509 1351 511
+rect 1925 509 1938 511
+rect 2326 509 2339 511
+rect 1925 396 1938 398
+rect 2326 396 2339 398
+rect 542 364 543 366
+rect 943 364 944 366
+rect 1496 111 1497 113
+rect 2083 111 2084 113
 << metal1 >>
 rect 1498 684 1524 687
 rect 2335 614 2339 620
@@ -94,15 +107,15 @@ rect 2210 70 2423 73
 rect 2426 12 2429 693
 rect 1532 9 2429 12
 use lut  lut_0
-timestamp 1383979221
+timestamp 1384231894
 transform 1 0 539 0 1 356
-box 0 0 593 108
+box 0 -2 593 108
 use tree  tree_1
-timestamp 1384142942
+timestamp 1384231894
 transform -1 0 2340 0 -1 620
-box -2 -113 2352 334
+box -2 -115 2352 334
 use tree  tree_0
-timestamp 1384142942
+timestamp 1384231894
 transform 1 0 -80 0 1 103
-box -2 -113 2352 334
+box -2 -115 2352 334
 << end >>

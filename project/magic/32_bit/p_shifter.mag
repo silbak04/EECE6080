@@ -1,6 +1,8 @@
 magic
 tech scmos
-timestamp 1384140532
+timestamp 1384231894
+<< error_s >>
+rect 3 8 4 10
 << metal1 >>
 rect 102 46 121 49
 rect 202 46 221 49
@@ -59,9 +61,36 @@ rect 718 20 722 21
 rect 790 22 793 37
 rect 790 19 811 22
 rect 189 12 221 15
-use DFFPOSX1  DFFPOSX1_0
-array 0 7 100 0 0 108
-timestamp 1383129201
+use DFFPOSX1  DFFPOSX1_0(0)
+timestamp 1384231894
 transform 1 0 8 0 1 3
-box -8 -3 104 105
+box -8 -5 104 105
+use DFFPOSX1  DFFPOSX1_0(1)
+timestamp 1384231894
+transform 1 0 108 0 1 3
+box -8 -5 104 105
+use DFFPOSX1  DFFPOSX1_0(2)
+timestamp 1384231894
+transform 1 0 208 0 1 3
+box -8 -5 104 105
+use DFFPOSX1  DFFPOSX1_0(3)
+timestamp 1384231894
+transform 1 0 308 0 1 3
+box -8 -5 104 105
+use DFFPOSX1  DFFPOSX1_0(4)
+timestamp 1384231894
+transform 1 0 408 0 1 3
+box -8 -5 104 105
+use DFFPOSX1  DFFPOSX1_0(5)
+timestamp 1384231894
+transform 1 0 508 0 1 3
+box -8 -5 104 105
+use DFFPOSX1  DFFPOSX1_0(6)
+timestamp 1384231894
+transform 1 0 608 0 1 3
+box -8 -5 104 105
+use DFFPOSX1  DFFPOSX1_0(7)
+timestamp 1384231894
+transform 1 0 708 0 1 3
+box -8 -5 104 105
 << end >>
