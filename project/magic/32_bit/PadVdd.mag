@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1008952456
+timestamp 1384231894
 << nwell >>
 rect 20 739 280 999
 rect 17 428 283 652
@@ -335,14 +335,18 @@ rect 0 265 300 271
 rect 0 261 3 265
 rect 297 261 300 265
 rect 0 255 300 261
-rect 0 2 2 255
-rect 6 7 8 255
-rect 292 7 294 255
+rect 0 253 8 255
+rect 0 4 2 253
+rect 6 7 8 253
+rect 292 253 300 255
+rect 292 7 294 253
 rect 6 6 294 7
-rect 6 2 8 6
+rect 6 4 8 6
+rect 0 2 8 4
 rect 92 2 203 6
-rect 292 2 294 6
-rect 298 2 300 255
+rect 292 4 294 6
+rect 298 4 300 253
+rect 292 2 300 4
 rect 0 -1 300 2
 << psubstratepcontact >>
 rect 1 659 95 668
@@ -419,11 +423,11 @@ rect 3 291 297 295
 rect 3 281 297 285
 rect 3 271 297 275
 rect 3 261 297 265
-rect 2 2 6 255
+rect 2 4 6 253
 rect 8 251 292 255
 rect 8 2 92 6
 rect 203 2 292 6
-rect 294 2 298 255
+rect 294 4 298 253
 << polysilicon >>
 rect 6 712 21 715
 rect 24 712 39 715
@@ -838,9 +842,11 @@ rect 0 260 300 261
 rect 0 256 8 260
 rect 292 256 300 260
 rect 0 255 300 256
-rect 0 2 2 255
-rect 6 251 8 255
-rect 292 251 294 255
+rect 0 253 8 255
+rect 0 4 2 253
+rect 6 251 8 253
+rect 292 253 300 255
+rect 292 251 294 253
 rect 6 250 294 251
 rect 6 7 8 250
 rect 14 240 99 245
@@ -963,7 +969,8 @@ rect 157 59 180 68
 rect 157 51 244 59
 rect 157 27 198 51
 rect 6 6 99 7
-rect 6 2 8 6
+rect 6 4 8 6
+rect 0 2 8 4
 rect 92 2 99 6
 rect 0 -1 99 2
 rect 102 -1 198 27
@@ -989,8 +996,9 @@ rect 201 13 286 17
 rect 292 7 294 250
 rect 201 6 294 7
 rect 201 2 203 6
-rect 292 2 294 6
-rect 298 2 300 255
+rect 292 4 294 6
+rect 298 4 300 253
+rect 292 2 300 4
 rect 201 -1 300 2
 << m2contact >>
 rect 23 639 277 643

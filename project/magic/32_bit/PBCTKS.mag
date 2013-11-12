@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1384225954
+timestamp 1384231894
 << metal2 >>
 rect 1023 4743 1277 4997
 rect 1323 4743 1577 4997
@@ -34,39 +34,39 @@ rect 2823 3 3077 257
 rect 3123 3 3377 257
 rect 3423 3 3677 257
 use top  top_0
-timestamp 1384219646
+timestamp 1384231894
 transform 1 0 3182 0 1 2064
 box -3182 -2064 1818 2936
 << labels >>
-rlabel metal2 3 3123 257 3377 0 LO_4
-rlabel metal2 3 2823 257 3077 0 PCLKI
-rlabel metal2 3 2523 257 2777 0 LCLKI
-rlabel metal2 3 2223 257 2477 0 P_IN
-rlabel metal2 3 1923 257 2177 0 L_IN
-rlabel metal2 3 1623 257 1877 0 TMEI
-rlabel metal2 1023 3 1277 257 0 TII
-rlabel metal2 1323 3 1577 257 0 TIO
-rlabel metal2 1623 3 1877 257 0 TFDI
-rlabel metal2 2223 3 2477 257 0 TPCO
-rlabel metal2 2823 3 3077 257 0 TFQO
-rlabel metal2 3123 3 3377 257 0 PO_1
-rlabel metal2 3423 3 3677 257 0 LO_1
-rlabel metal2 4743 1623 4997 1877 0 TEMO
-rlabel metal2 4743 1923 4997 2177 0 L_OUT
-rlabel metal2 4743 2223 4997 2477 0 P_OUT
-rlabel metal2 4743 2523 4997 2777 0 LCLKO
-rlabel metal2 4743 2823 4997 3077 0 PCLKO
-rlabel metal2 4743 3123 4997 3377 0 F
-rlabel metal2 3723 4743 3977 4997 0 TSPO
-rlabel metal2 3423 4743 3677 4997 0 TSPI
-rlabel metal2 3123 4743 3377 4997 0 TSF
-rlabel metal2 2823 4743 3077 4997 0 TSLO
-rlabel metal2 2523 4743 2777 4997 0 TSB
-rlabel metal2 2223 4743 2477 4997 0 VDD
-rlabel metal2 1923 4743 2177 4997 0 TSA
-rlabel metal2 1623 4743 1877 4997 0 TSLI
-rlabel metal2 1323 4743 1577 4997 0 TSCO
-rlabel metal2 1023 4743 1277 4997 0 TSCI
-rlabel metal2 1923 3 2177 257 0 TFCI
-rlabel metal2 2523 3 2777 257 0 GND
+rlabel metal2 130 3250 130 3250 6 LO_4
+rlabel metal2 130 2950 130 2950 6 PCLKI
+rlabel metal2 130 2650 130 2650 6 LCLKI
+rlabel metal2 130 2350 130 2350 6 P_IN
+rlabel metal2 130 2050 130 2050 6 L_IN
+rlabel metal2 130 1750 130 1750 6 TMEI
+rlabel metal2 1150 130 1150 130 6 TII
+rlabel metal2 1450 130 1450 130 6 TIO
+rlabel metal2 1750 130 1750 130 6 TFDI
+rlabel metal2 2350 130 2350 130 6 TPCO
+rlabel metal2 2950 130 2950 130 6 TFQO
+rlabel metal2 3250 130 3250 130 6 PO_1
+rlabel metal2 3550 130 3550 130 6 LO_1
+rlabel metal2 4870 1750 4870 1750 6 TEMO
+rlabel metal2 4870 2050 4870 2050 6 L_OUT
+rlabel metal2 4870 2350 4870 2350 6 P_OUT
+rlabel metal2 4870 2650 4870 2650 6 LCLKO
+rlabel metal2 4870 2950 4870 2950 6 PCLKO
+rlabel metal2 4870 3250 4870 3250 6 F
+rlabel metal2 3850 4870 3850 4870 6 TSPO
+rlabel metal2 3550 4870 3550 4870 6 TSPI
+rlabel metal2 3250 4870 3250 4870 6 TSF
+rlabel metal2 2950 4870 2950 4870 6 TSLO
+rlabel metal2 2650 4870 2650 4870 6 TSB
+rlabel metal2 2350 4870 2350 4870 6 VDD
+rlabel metal2 2050 4870 2050 4870 6 TSA
+rlabel metal2 1750 4870 1750 4870 6 TSLI
+rlabel metal2 1450 4870 1450 4870 6 TSCO
+rlabel metal2 1150 4870 1150 4870 6 TSCI
+rlabel metal2 2050 130 2050 130 6 TFCI
+rlabel metal2 2650 130 2650 130 6 GND
 << end >>

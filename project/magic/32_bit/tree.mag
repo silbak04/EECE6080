@@ -1,6 +1,25 @@
 magic
 tech scmos
-timestamp 1384142942
+timestamp 1384231894
+<< error_s >>
+rect 1 234 2 236
+rect 402 234 403 236
+rect 1 121 2 123
+rect 402 121 403 123
+rect 989 121 990 123
+rect 402 8 403 10
+rect 989 8 990 10
+rect 1576 8 1577 10
+rect 2163 8 2164 10
+<< pwell >>
+rect 585 121 589 138
+rect 585 116 588 121
+rect 585 8 589 25
+rect 1172 8 1176 25
+rect 1759 8 1763 25
+rect 585 3 588 8
+rect 1172 3 1175 8
+rect 1759 3 1762 8
 << m2contact >>
 rect 919 -69 923 -65
 rect 1019 -70 1023 -66
@@ -58,21 +77,35 @@ rect 2287 -29 2290 0
 rect 1619 -33 2290 -29
 rect 1619 -66 1623 -33
 use lut  lut_2
-timestamp 1383979221
+timestamp 1384231894
 transform 1 0 -2 0 1 226
-box 0 0 593 108
-use lut  lut_1
-array 0 1 587 0 0 108
-timestamp 1383979221
+box 0 -2 593 108
+use lut  lut_1(0)
+timestamp 1384231894
 transform 1 0 -2 0 1 113
-box 0 0 593 108
-use lut  lut_0
-array 0 3 587 0 0 108
-timestamp 1383979221
+box 0 -2 593 108
+use lut  lut_1(1)
+timestamp 1384231894
+transform 1 0 585 0 1 113
+box 0 -2 593 108
+use lut  lut_0(0)
+timestamp 1384231894
 transform 1 0 -2 0 1 0
-box 0 0 593 108
+box 0 -2 593 108
+use lut  lut_0(1)
+timestamp 1384231894
+transform 1 0 585 0 1 0
+box 0 -2 593 108
+use lut  lut_0(2)
+timestamp 1384231894
+transform 1 0 1172 0 1 0
+box 0 -2 593 108
+use lut  lut_0(3)
+timestamp 1384231894
+transform 1 0 1759 0 1 0
+box 0 -2 593 108
 use p_shifter  p_shifter_0
-timestamp 1384140532
+timestamp 1384231894
 transform 1 0 821 0 1 -113
-box -5 0 812 108
+box -5 -2 812 108
 << end >>
