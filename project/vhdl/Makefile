@@ -7,6 +7,9 @@ FILES = $(wildcard *.vhd)
 #tb = top_test_tb
 #tb = lut_slice_tb
 tb = top_tb
+#tb = top_del_tb
+#tb = lut_slice_del_tb
+#tb = top_test_del_tb
 
 all: compile
 

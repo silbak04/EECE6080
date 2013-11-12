@@ -3,6 +3,7 @@
 *.swp
 db/
 incremental_db/
+lab_3/*
 *.bak
 *.vwf
 qsim/
@@ -19,3 +20,4 @@ qsim/
 *.lol
 *.lot
 *.toc
+*.vcd
