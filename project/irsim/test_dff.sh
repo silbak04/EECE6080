@@ -1,1 +1,1 @@
-irsim ../../models/scmos30.prm ../magic/32_bit/top.sim -test_dff.cmd &
+irsim ../../models/scmos30.prm ../magic/32_bit/pbctks_1.sim -test_dff.cmd &
