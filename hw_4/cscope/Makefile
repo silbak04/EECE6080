@@ -20,3 +20,6 @@ clean:
 	rm -f *.log
 	rm -f *.bak
 	rm -f *~
+
+rsync:
+	rsync -avz -e "ssh" ~/vlsi/hw_4/ silbaksr@everest.rhod.uc.edu:~/vlsi/hw_4/
