@@ -1,4 +1,4 @@
-* Samir Silbak
+* Samir Silbak - part_1_n_nand
 * M03321037
 
 .include /home/silbaksr/vlsi/models/library.sp
@@ -16,15 +16,16 @@ Xnnand clk a b f vdd gnd nnand
 
 V_dd vdd gnd 5V
 
-.param s = 1
+*.param freq = 200Meg
+.param freq = 925.93Meg
 
-v1 a    gnd PWL(0n 0v '9.9n*s' 0v '10n*s' 5v '34.9n*s' 5v '35n*s' 0v '49.9n*s' 0v '50n*s' 5v '54.9n*s' 5v '55n*s' 0v)
-v2 b    gnd PWL(0n 0v '9.9n*s' 0v '10n*s' 5v '34.9n*s' 5v '35n*s' 0v '49.9n*s' 0v '50n*s' 5v '54.9n*s' 5v '55n*s' 0v)
+va a    gnd PWL(0n 0v '8.9n' 0v '9n' 5v '10.9n' 5v '11n' 0v)
+vb b    gnd PWL(0n 0v '8.9n' 0v '9n' 5v '10.9n' 5v '11n' 0v)
 
-v4 clk  gnd PULSE(0v 5v 15n 0n 0n 15n 30n)
+v3 clk  gnd PULSE(0V 5V '1/freq/2' 0 0 '1/freq/2' '1/freq')
 
 .options post
-.tran 0.01n '75n*s'
+.tran 0.01n '20n'
 
 .meas tran t_rise trig v(f) val=0.5V rise=1 targ v(f) val=4.5V rise=1
 .meas tran t_fall trig v(f) val=4.5V fall=1 targ v(f) val=0.5V fall=1

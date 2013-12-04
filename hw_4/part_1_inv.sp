@@ -1,4 +1,4 @@
-* Samir Silbak
+* Samir Silbak - part_1_inv
 * M03321037
 
 .include /home/silbaksr/vlsi/models/library.sp

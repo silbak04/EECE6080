@@ -1,4 +1,4 @@
-* Samir Silbak
+* Samir Silbak - part_2
 * M03321037
 
 .include /home/silbaksr/vlsi/models/library.sp
@@ -15,19 +15,18 @@ Xcarry clk_p clk_n p g ci co vdd gnd carry
 
 V_dd vdd gnd 5V
 
-*.param s = 0.0753
-.param s = 1
+.param freq = 381.2Meg
+*.param freq = 200Meg
 
-vclk_p  clk_p   gnd PULSE(0V 5V '15n*s' 0 0 '15n*s' '30n*s')
-vclk_n  clk_n   gnd PULSE(5V 0V '15n*s' 0 0 '15n*s' '30n*s')
+vclk_p  clk_p   gnd PULSE(0V 5V '1/freq/2' 0 0 '1/freq/2' '1/freq')
+vclk_n  clk_n   gnd PULSE(5V 0V '1/freq/2' 0 0 '1/freq/2' '1/freq')
 
 vp      p       gnd PWL(0n 5V)
-*vg      g       gnd PWL(0n 5V)
 vg      g       gnd PWL(0n 0V)
-vci     ci      gnd PWL(0n 0V '9.9n*s' 0V '10n*s' 5V '34.9n*s' 5V '35n*s' 0V '49.9n*s' 0V '50n*s' 5V '54.9n*s' 5V '55n*s' 0v)
+vci     ci      gnd PWL(0n 0v '7.9n' 0v '8n' 5v '11.9n' 5v '12n' 0v)
 
 .option post
-.tran 0.01n '75n*s'
+.tran 0.01n '20n'
 
 .meas tran t_rise trig v(co) val=0.5V rise=1 targ v(co) val=4.5V rise=1
 .meas tran t_fall trig v(co) val=4.5V fall=1 targ v(co) val=0.5V fall=1
